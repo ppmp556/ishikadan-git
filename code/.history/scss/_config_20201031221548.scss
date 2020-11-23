@@ -1,0 +1,41 @@
+// サイト共通で必要になる設定値
+// 変数定義用
+
+
+/**********
+
+変数管理
+
+**********/
+
+//color
+$cWhite: #ffffff;
+$cBlack: #333;
+$cBgColor: #fffff6;
+
+
+
+//font-family
+//-->ヒラギノver.
+$fontMain: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ",
+  Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+
+//-->游ゴシックver.
+// $font-main:"游ゴシック Medium","Yu Gothic Medium","游ゴシック体",YuGothic,sans-serif;
+
+
+
+
+/*************
+
+レスポンシブ
+
+**************/
+
+
+//ブレイクポイント
+$widthPc: 1024px;
+$widthTab: 764px;
+$widthSP: 480px;
+
+

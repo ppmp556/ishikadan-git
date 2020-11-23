@@ -1,0 +1,96 @@
+// ベーススタイル用
+
+
+html {
+    // ルートのフォントサイズ 10pxに設定
+    font-size: 62.5%;
+}
+
+body {
+
+    @include rem(10);
+
+    // デフォルトのフォントサイズ 16pxと同等のサイズに設定
+    font-size: 1.6em;
+    font-size: 16px;
+    margin: 0 auto;
+    letter-spacing: .5em;
+    font-family: $fontMain;
+    color: $cBlack;
+
+    // width: 375px;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+.overall {
+    font-family: "Yu Gothic", YuGothic, "Hiragino Kaku Gothic Pro", "YuGothic",
+        "Meiryo", verdana, "Osaka", "MS PGothic", Sans-Serif, "Yu Mincho",
+        YuMincho, "MS P Mincho", serif;
+
+    background-color: $cBgColor;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    // color: $cWhite;
+    /* position: relative; */
+    overflow: hidden;
+}
+
+/*************
+
+モック画像
+終わったら削除
+
+**************/
+
+
+.mock {
+    /* モック画像 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 375px;
+    opacity: 0.3;
+
+    /* 反転 */
+    filter: hue-rotate(180deg);
+
+    /* テキストを掴まないように */
+    pointer-events: none;
+
+    z-index: 999;
+}
+
+
+
+
+// コンテンツ幅
+.inner {
+    margin: 0 15px;
+}
+
+
+
+//共通タイトル
+.section_ttl {
+    @include rem(18);
+    display: block;
+    text-align: center;
+}
+
+
+//セクションの共通inner
+.section_inner {
+    margin: 0 auto;
+    padding: 0 20px;
+
+}

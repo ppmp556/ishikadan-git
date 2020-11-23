@@ -1,0 +1,262 @@
+@charset "UTF-8";
+/****************************************:
+
+スタイル読み込み
+
+*****************************************:*/
+/**********
+
+変数管理
+
+**********/
+/*************
+
+レスポンシブ
+
+**************/
+/*************
+
+メディアクエリ定義
+
+**************/
+/*************
+
+font-size定義
+
+**************/
+/*************
+
+flex定義
+
+**************/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 10px;
+  /*IE9以前に対応する*/
+  font-size: 0.625rem;
+  font-size: 1.6em;
+  font-size: 16px;
+  margin: 0 auto;
+  letter-spacing: .5em;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  color: #333;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.overall {
+  font-family: "Yu Gothic", YuGothic, "Hiragino Kaku Gothic Pro", "YuGothic", "Meiryo", verdana, "Osaka", "MS PGothic", Sans-Serif, "Yu Mincho", YuMincho, "MS P Mincho", serif;
+  background-color: #fffff6;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  /* position: relative; */
+  overflow: hidden;
+}
+
+/*************
+
+モック画像
+終わったら削除
+
+**************/
+.mock {
+  /* モック画像 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 375px;
+  opacity: 0.3;
+  /* 反転 */
+  -webkit-filter: hue-rotate(180deg);
+          filter: hue-rotate(180deg);
+  /* テキストを掴まないように */
+  pointer-events: none;
+  z-index: 999;
+}
+
+.inner {
+  margin: 0 15px;
+}
+
+.section_ttl {
+  font-size: 18px;
+  /*IE9以前に対応する*/
+  font-size: 1.125rem;
+  display: block;
+  text-align: center;
+}
+
+.section_inner {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/****************************************:
+
+nav
+
+*****************************************:*/
+.nav {
+  position: relative;
+}
+
+.nav_list {
+  position: absolute;
+  right: -1000px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.nav_list.clicked {
+  right: -5vw;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.nav_ham {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
+  z-index: 100;
+}
+
+.nav_ham.clicked {
+  right: 40px;
+}
+
+.nav_hamspan {
+  font-size: 1.1rem;
+  position: absolute;
+  top: -20px;
+  left: -25px;
+}
+
+.nav_line {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.nav_line:nth-child(1) {
+  top: 0px;
+}
+
+.nav_line:nth-child(2) {
+  top: 8px;
+}
+
+.nav_line:nth-child(3) {
+  top: 16px;
+}
+
+.nav_line.clicked:nth-child(1) {
+  -webkit-transform: translateY(12px) rotate(-315deg);
+          transform: translateY(12px) rotate(-315deg);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.nav_line.clicked:nth-child(2) {
+  left: 0;
+  -webkit-transition: .9s;
+  transition: .9s;
+  opacity: 0;
+}
+
+.nav_line.clicked:nth-child(3) {
+  -webkit-transform: translateY(-4px) rotate(315deg);
+          transform: translateY(-4px) rotate(315deg);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.nav_item {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 2.5rem;
+  line-height: 3;
+  padding-right: 30px;
+}
+
+.nav_link {
+  position: relative;
+  display: block;
+  letter-spacing: .2em;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.nav_link::after {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: -webkit-transform .7s;
+  transition: -webkit-transform .7s;
+  transition: transform .7s;
+  transition: transform .7s, -webkit-transform .7s;
+  background: #ffffff;
+}
+
+.nav_link:hover::after {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.nav_link:hover {
+  color: #ffffff;
+  letter-spacing: .5em;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+/****************************************:
+
+header
+
+*****************************************:*/
+/****************************************:
+
+fv
+
+*****************************************:*/
+/****************************************:
+
+section
+
+*****************************************:*/
+/****************************************:
+
+footer
+
+*****************************************:*/
