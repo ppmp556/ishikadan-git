@@ -13,7 +13,6 @@ nav
     &_list {
         @include flex($justify: flex-start);
         color: $cWhite;
-        align-items: center;
     }
 
 

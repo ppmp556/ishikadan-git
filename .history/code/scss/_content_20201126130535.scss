@@ -15,18 +15,18 @@ header
     // background-color: red;
     
     @include flex;
-    align-items: center;
-    
+
     &_link {
-        @include rem(48);
         width: 100%;
         height: 100%;
         display: block;
+        @include rem(32);
     }
     
     &_ttl {
         
         color: $cWhite;
+        position: relative;
 
         &::before {
             position: absolute;
@@ -43,8 +43,15 @@ header
 
 
 
+/****************************************:
 
+nav
 
+*****************************************:*/
+
+.nav_ham {
+    display: none;
+}
 
 
 
@@ -57,7 +64,6 @@ fv
 
 .top {
     position: relative;
-    // width: 100vw;
 
     &_mv_imgbox {
         position: absolute;

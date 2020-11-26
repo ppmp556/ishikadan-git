@@ -11,9 +11,7 @@ nav
     position: relative;
 
     &_list {
-        @include flex($justify: flex-start);
-        color: $cWhite;
-        align-items: center;
+        @include flex;
     }
 
 

@@ -15,10 +15,9 @@ header
     // background-color: red;
     
     @include flex;
-    align-items: center;
     
     &_link {
-        @include rem(48);
+        @include rem(360);
         width: 100%;
         height: 100%;
         display: block;

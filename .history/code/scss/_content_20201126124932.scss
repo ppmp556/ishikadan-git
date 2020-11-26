@@ -7,40 +7,30 @@ header
 
 *****************************************:*/
 .header {
-    width: 100%;
     position: absolute;
-    top: 0;
     padding: 20px;
-    z-index: 99;
-    // background-color: red;
-    
+
     @include flex;
-    align-items: center;
-    
+
     &_link {
-        @include rem(48);
         width: 100%;
         height: 100%;
         display: block;
+        @include rem(32);
+        color: $cBlack;
     }
-    
+
     &_ttl {
-        
-        color: $cWhite;
+
 
         &::before {
             position: absolute;
             content: "";
             background: url(../img/common/logo01.png);
-            width: 20px;
-            height: 20px;
-            display: block;
-            z-index: 1;
         }
     }
 
 }
-
 
 
 
@@ -55,16 +45,7 @@ fv
 
 *****************************************:*/
 
-.top {
-    position: relative;
-    // width: 100vw;
 
-    &_mv_imgbox {
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-}
 
 
 

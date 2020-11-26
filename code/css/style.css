@@ -40,9 +40,8 @@ body {
   font-size: 1.6em;
   font-size: 16px;
   margin: 0 auto;
-  letter-spacing: .5em;
-  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-  color: #333;
+  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  color: #000000;
 }
 
 * {
@@ -51,8 +50,8 @@ body {
 }
 
 .overall {
-  font-family: "Yu Gothic", YuGothic, "Hiragino Kaku Gothic Pro", "YuGothic", "Meiryo", verdana, "Osaka", "MS PGothic", Sans-Serif, "Yu Mincho", YuMincho, "MS P Mincho", serif;
-  background-color: #fffff6;
+  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  background-color: #f6f6f6;
 }
 
 .container {
@@ -90,9 +89,9 @@ body {
 }
 
 .section_ttl {
-  font-size: 18px;
+  font-size: 36px;
   /*IE9以前に対応する*/
-  font-size: 1.125rem;
+  font-size: 2.25rem;
   display: block;
   text-align: center;
 }
@@ -112,86 +111,103 @@ nav
 }
 
 .nav_list {
-  position: absolute;
-  right: -1000px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  color: #ffffff;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.nav_list.clicked {
-  right: -5vw;
-  -webkit-transition: .6s;
-  transition: .6s;
+@media screen and (max-width: 480px) {
+  .nav_list {
+    position: absolute;
+    right: -1000px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nav_list.clicked {
+    right: -5vw;
+    -webkit-transition: .6s;
+    transition: .6s;
+  }
 }
 
 .nav_ham {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  right: 0;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  width: 25px;
-  height: 25px;
-  z-index: 100;
+  display: none;
 }
 
-.nav_ham.clicked {
-  right: 40px;
-}
-
-.nav_hamspan {
-  font-size: 1.1rem;
-  position: absolute;
-  top: -20px;
-  left: -25px;
-}
-
-.nav_line {
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background-color: #ffffff;
-}
-
-.nav_line:nth-child(1) {
-  top: 0px;
-}
-
-.nav_line:nth-child(2) {
-  top: 8px;
-}
-
-.nav_line:nth-child(3) {
-  top: 16px;
-}
-
-.nav_line.clicked:nth-child(1) {
-  -webkit-transform: translateY(12px) rotate(-315deg);
-          transform: translateY(12px) rotate(-315deg);
-  -webkit-transition: .5s;
-  transition: .5s;
-}
-
-.nav_line.clicked:nth-child(2) {
-  left: 0;
-  -webkit-transition: .9s;
-  transition: .9s;
-  opacity: 0;
-}
-
-.nav_line.clicked:nth-child(3) {
-  -webkit-transform: translateY(-4px) rotate(315deg);
-          transform: translateY(-4px) rotate(315deg);
-  -webkit-transition: .5s;
-  transition: .5s;
+@media screen and (max-width: 480px) {
+  .nav_ham {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: 25px;
+    height: 25px;
+    z-index: 100;
+  }
+  .nav_ham.clicked {
+    right: 40px;
+  }
+  .nav_hamspan {
+    font-size: 1.1rem;
+    position: absolute;
+    top: -20px;
+    left: -25px;
+  }
+  .nav_line {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+  }
+  .nav_line:nth-child(1) {
+    top: 0px;
+  }
+  .nav_line:nth-child(2) {
+    top: 8px;
+  }
+  .nav_line:nth-child(3) {
+    top: 16px;
+  }
+  .nav_line.clicked:nth-child(1) {
+    -webkit-transform: translateY(12px) rotate(-315deg);
+            transform: translateY(12px) rotate(-315deg);
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+  .nav_line.clicked:nth-child(2) {
+    left: 0;
+    -webkit-transition: .9s;
+    transition: .9s;
+    opacity: 0;
+  }
+  .nav_line.clicked:nth-child(3) {
+    -webkit-transform: translateY(-4px) rotate(315deg);
+            transform: translateY(-4px) rotate(315deg);
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
 }
 
 .nav_item {
@@ -240,16 +256,84 @@ nav
   transition: .5s;
 }
 
+.site_link {
+  display: block;
+  width: 200px;
+  border: 1px solid #707070;
+  font-size: 16px;
+  /*IE9以前に対応する*/
+  font-size: 1rem;
+  padding: 20px 0;
+  text-align: center;
+  line-height: 2em;
+}
+
 /****************************************:
 
 header
 
 *****************************************:*/
+.header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  padding: 20px;
+  z-index: 99;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header_link {
+  font-size: 48px;
+  /*IE9以前に対応する*/
+  font-size: 3rem;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.header_ttl {
+  color: #ffffff;
+}
+
+.header_ttl::before {
+  position: absolute;
+  content: "";
+  background: url(../img/common/logo01.png);
+  width: 20px;
+  height: 20px;
+  display: block;
+  z-index: 1;
+}
+
 /****************************************:
 
 fv
 
 *****************************************:*/
+.top {
+  position: relative;
+}
+
+.top_mv_imgbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 /****************************************:
 
 section

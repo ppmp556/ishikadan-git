@@ -15,7 +15,6 @@ header
     // background-color: red;
     
     @include flex;
-    align-items: center;
     
     &_link {
         @include rem(48);
