@@ -74,6 +74,7 @@ fv
         top: 0;
         left: 0;
         right: 0;
+        width: 100%;
         display: block;
         overflow: hidden;
         object-fit: cover;
@@ -106,13 +107,6 @@ top_about
         max-width: 1180px;
         writing-mode: vertical-rl; //縦書き
         padding: 60px;
-    }
-
-    .section_ttl {
-        @include rem(28);
-        text-align: start;
-        text-indent: -2em;
-        letter-spacing: .5em;
     }
 }
 

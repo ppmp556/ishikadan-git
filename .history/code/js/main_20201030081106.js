@@ -30,7 +30,7 @@ $(() => {
     let nowPage = 0;
     let nextPage = 1;
 
-    const slides = $("#js-mv_slide").find("img");
+    const slides = $("#kv_slide").find("img");
     const slideLength = slides.length;
 
     const fadeTime = 1500;
