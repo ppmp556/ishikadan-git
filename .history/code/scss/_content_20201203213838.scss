@@ -132,13 +132,13 @@ top_about
 .top_about {
     background: url(../img/common/bg.jpg) center / cover;
     width: 100%;
-    margin-top: 1031px;
+    margin-top: 1030px;
 
     .section_inner {
         width: 100%;
         max-width: 1180px;
         writing-mode: vertical-rl; //縦書き
-        padding: 149px 0 54px;
+        padding: 60px;
     }
 
     .section_ttl {
@@ -147,7 +147,6 @@ top_about
         text-indent: -2em;
         letter-spacing: .5em;
         line-height: 1.5;
-        margin: 0 101px 0 0;
     }
 
     &_txtbox {
@@ -157,13 +156,6 @@ top_about
 
     &_txt {
         margin-left: 118px;
-        line-height: 2.2;
-        letter-spacing: .3em;
-
-        &:last-child {
-            margin-top: 294px;
-            @include rem(22);
-        }
     }
 }
 

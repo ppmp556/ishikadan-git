@@ -55,7 +55,7 @@ body {
 }
 
 .container {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   /* position: relative; */
   overflow: hidden;
@@ -84,10 +84,6 @@ body {
   z-index: 999;
 }
 
-.inner {
-  margin: 0 15px;
-}
-
 .section_ttl {
   font-size: 36px;
   /*IE9以前に対応する*/
@@ -108,6 +104,7 @@ nav
 *****************************************:*/
 .nav {
   position: relative;
+  margin-left: 120px;
 }
 
 .nav_list {
@@ -212,9 +209,15 @@ nav
 
 .nav_item {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 16px;
+  /*IE9以前に対応する*/
+  font-size: 1rem;
   line-height: 3;
-  padding-right: 30px;
+  margin-right: 30px;
+}
+
+.nav_item:last-child {
+  margin: 0;
 }
 
 .nav_link {
@@ -257,11 +260,10 @@ nav
 
 .site_link {
   display: block;
-  width: 200px;
-  border: 1px solid #707070;
   font-size: 16px;
   /*IE9以前に対応する*/
   font-size: 1rem;
+  color: #ffffff;
   padding: 20px 0;
   text-align: center;
   line-height: 2em;
@@ -282,10 +284,10 @@ header
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-flex-wrap: nowrap;
       -ms-flex-wrap: nowrap;
           flex-wrap: nowrap;
@@ -295,6 +297,26 @@ header
           align-items: center;
 }
 
+.header_ttl {
+  color: #ffffff;
+  position: relative;
+  letter-spacing: .5em;
+  margin-left: 40px;
+  padding: 0 20px;
+}
+
+.header_ttl::before {
+  position: absolute;
+  content: "";
+  background: url(../img/common/logo01.png) center no-repeat;
+  width: 40px;
+  height: 40px;
+  display: block;
+  z-index: 1;
+  background-size: contain;
+  left: -40px;
+}
+
 .header_link {
   width: 100%;
   height: 100%;
@@ -302,19 +324,17 @@ header
   font-size: 3rem;
 }
 
-.header_ttl {
-  color: #ffffff;
-  position: relative;
-}
-
-.header_ttl::before {
+.header_btnbox {
+  background: #978F10;
   position: absolute;
-  content: "";
-  background: url(../img/common/logo01.png);
-  width: 50px;
-  height: 50px;
-  display: block;
-  z-index: 1;
+  right: 0;
+  margin-right: 20px;
+  width: 170px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+  /*IE9以前に対応する*/
+  font-size: 1rem;
 }
 
 /****************************************:
@@ -346,6 +366,7 @@ fv
      object-fit: cover;
   -webkit-transition: 3s linear transform .3s;
   transition: 3s linear transform .3s;
+  height: 100%;
 }
 
 .top_mv_img.zoom {
@@ -361,7 +382,7 @@ top_about
 .top_about {
   background: url(../img/common/bg.jpg) center/cover;
   width: 100%;
-  margin-top: 1079px;
+  margin-top: 1031px;
 }
 
 .top_about .section_inner {
@@ -370,7 +391,7 @@ top_about
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
-  padding: 60px;
+  padding: 149px 0 54px;
 }
 
 .top_about .section_ttl {
@@ -380,6 +401,28 @@ top_about
   text-align: start;
   text-indent: -2em;
   letter-spacing: .5em;
+  line-height: 1.5;
+  margin: 0 101px 0 0;
+}
+
+.top_about_txtbox {
+  font-size: 16px;
+  /*IE9以前に対応する*/
+  font-size: 1rem;
+  margin-right: 118px;
+}
+
+.top_about_txt {
+  margin-left: 118px;
+  line-height: 2.2;
+  letter-spacing: .3em;
+}
+
+.top_about_txt:last-child {
+  margin-top: 294px;
+  font-size: 22px;
+  /*IE9以前に対応する*/
+  font-size: 1.375rem;
 }
 
 /****************************************:

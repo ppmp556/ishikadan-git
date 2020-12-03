@@ -161,8 +161,7 @@ top_about
         letter-spacing: .3em;
 
         &:last-child {
-            margin-top: 294px;
-            @include rem(22);
+            margin-bottom: auto;
         }
     }
 }

@@ -14,7 +14,7 @@ header
     z-index: 99;
     // background-color: red;
 
-    @include flex($justify: flex-start);
+    @include flex;
     align-items: center;
 
     &_ttl {
@@ -22,19 +22,16 @@ header
         color: $cWhite;
         position: relative;
         letter-spacing: .5em;
-        margin-left: 40px;
-        padding: 0 20px;
 
         &::before {
             position: absolute;
             content: "";
             background: url(../img/common/logo01.png) center no-repeat ;
-            width: 40px;
-            height: 40px;
+            width: 50px;
+            height: 50px;
             display: block;
             z-index: 1;
             background-size: contain;
-            left: -40px;
         }
     }
 
@@ -45,31 +42,7 @@ header
         display: block;
         font-size: 3rem;
     }
-
-    &_btnbox {
-        background: $cOcher;
-        position: absolute;
-        right: 0;
-        margin-right: 20px;
-        width: 170px;
-        color: $cWhite;
-        text-align: center;
-        @include rem(16);
-
-    }
-
-    // .headbtn::before {
-    //     position: absolute;
-    //     content: "";
-    //     background: url(../img/common/calender.png) center no-repeat;
-    //     width: 22px;
-    //     height: 22px;
-    //     background-size: contain;
-    //     display: block;
-
-
-    // }
-
+    
 
 }
 
@@ -109,8 +82,6 @@ fv
         overflow: hidden;
         object-fit: cover;
         transition: 3s linear transform .3s;
-
-        height: 100%;
         
         &.zoom {
             transform: scale(1.05);
@@ -132,13 +103,13 @@ top_about
 .top_about {
     background: url(../img/common/bg.jpg) center / cover;
     width: 100%;
-    margin-top: 1031px;
+    margin-top: 1079px;
 
     .section_inner {
         width: 100%;
         max-width: 1180px;
         writing-mode: vertical-rl; //縦書き
-        padding: 149px 0 54px;
+        padding: 60px;
     }
 
     .section_ttl {
@@ -146,24 +117,6 @@ top_about
         text-align: start;
         text-indent: -2em;
         letter-spacing: .5em;
-        line-height: 1.5;
-        margin: 0 101px 0 0;
-    }
-
-    &_txtbox {
-        @include rem(16);
-        margin-right: 118px;
-    }
-
-    &_txt {
-        margin-left: 118px;
-        line-height: 2.2;
-        letter-spacing: .3em;
-
-        &:last-child {
-            margin-top: 294px;
-            @include rem(22);
-        }
     }
 }
 

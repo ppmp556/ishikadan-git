@@ -138,7 +138,7 @@ top_about
         width: 100%;
         max-width: 1180px;
         writing-mode: vertical-rl; //縦書き
-        padding: 149px 0 54px;
+        padding: 60px;
     }
 
     .section_ttl {
@@ -161,8 +161,7 @@ top_about
         letter-spacing: .3em;
 
         &:last-child {
-            margin-top: 294px;
-            @include rem(22);
+            margin-bottom: auto;
         }
     }
 }

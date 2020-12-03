@@ -167,9 +167,9 @@ nav
 .site_link {
     display: block;
     // width: 200px;
+    border: 1px solid $cGray;
 
     @include rem(16);
-    color: $cWhite;
 
     padding: 20px 0;
     text-align: center;

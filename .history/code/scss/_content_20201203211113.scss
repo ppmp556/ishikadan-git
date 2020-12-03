@@ -52,23 +52,12 @@ header
         right: 0;
         margin-right: 20px;
         width: 170px;
+        line-height: 3em;
         color: $cWhite;
         text-align: center;
         @include rem(16);
 
     }
-
-    // .headbtn::before {
-    //     position: absolute;
-    //     content: "";
-    //     background: url(../img/common/calender.png) center no-repeat;
-    //     width: 22px;
-    //     height: 22px;
-    //     background-size: contain;
-    //     display: block;
-
-
-    // }
 
 
 }
@@ -109,8 +98,6 @@ fv
         overflow: hidden;
         object-fit: cover;
         transition: 3s linear transform .3s;
-
-        height: 100%;
         
         &.zoom {
             transform: scale(1.05);
@@ -132,13 +119,13 @@ top_about
 .top_about {
     background: url(../img/common/bg.jpg) center / cover;
     width: 100%;
-    margin-top: 1031px;
+    margin-top: 1079px;
 
     .section_inner {
         width: 100%;
         max-width: 1180px;
         writing-mode: vertical-rl; //縦書き
-        padding: 149px 0 54px;
+        padding: 60px;
     }
 
     .section_ttl {
@@ -146,24 +133,6 @@ top_about
         text-align: start;
         text-indent: -2em;
         letter-spacing: .5em;
-        line-height: 1.5;
-        margin: 0 101px 0 0;
-    }
-
-    &_txtbox {
-        @include rem(16);
-        margin-right: 118px;
-    }
-
-    &_txt {
-        margin-left: 118px;
-        line-height: 2.2;
-        letter-spacing: .3em;
-
-        &:last-child {
-            margin-top: 294px;
-            @include rem(22);
-        }
     }
 }
 
