@@ -36,14 +36,12 @@ header
             z-index: 1;
             background-size: contain;
             left: -40px;
-            top: 50%;
-            transform: translateY(-50%);
         }
     }
 
 
     &_link {
-        @include rem(25);
+        @include rem(20);
         width: 100%;
         height: 100%;
         display: block;
@@ -53,7 +51,7 @@ header
     &_btnbox {
         background: $cOcher;
         position: absolute;
-        right: 20px;
+        right: 0;
         margin-right: 20px;
         width: 170px;
         color: $cWhite;
@@ -102,7 +100,7 @@ fv
         left: 0;
         right: 0;
         height: 100vh;
-        height: 100%;
+        height: 1079px;
         
     }
     
@@ -134,9 +132,8 @@ fv
         z-index: 1;
         letter-spacing: .2em;
         position: absolute;
-        right: 25%;
-        top: 50%;
-        transform: translateY(-50%);
+        right: 508px;
+        bottom: 0;
     }
 }
 
@@ -153,6 +150,7 @@ top_about
 .top_about {
     background: url(../img/common/bg.jpg) center / cover;
     width: 100%;
+    margin-top: 1031px;
 
     .section_inner {
         width: 100%;
@@ -172,12 +170,7 @@ top_about
 
     &_txtbox {
         @include rem(16);
-        margin-right: auto;
-
-        &:nth-child(){
-            margin-right: 0;
-            margin-left: auto;
-        }
+        margin-right: 118px;
     }
 
     &_txt {
@@ -196,82 +189,6 @@ top_about
 
 
 
-
-
-
-
-/****************************************:
-
-top_guide
-
-*****************************************:*/
-
-.top_guide {
-    padding: 106px 0 78px;
-
-    &_box {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        margin-top: 122px;
-
-        
-        &:nth-child(2n) {
-            flex-direction: row-reverse;
-        }
-    }
-    
-    &_imgbox{
-        display: block;
-        width: 1050px;
-        height: 545px;
-        margin-right: 137px;
-        
-        &.room_img {
-            background: url(../img/section-oheya/oheya-top.jpg) center no-repeat;
-            background-size: cover;
-            
-        }
-        &.menu_img {
-            background: url(../img/section-menu/menu-top.jpg) center no-repeat;
-            background-size: cover;
-            margin-right: 0;
-            
-        }
-        &.onsen_img {
-            background: url(../img/section-onsen/onsen-top.jpg) center no-repeat;
-            background-size: cover;
-            
-        }
-
-
-    }
-
-    &_txtbox {
-        // width: 50%;
-        // margin: 0 auto;
-        color: $cBlack;
-        margin-right: auto;
-
-        &:nth-child() {
-            margin-left: 408px;
-            margin-right: 0;
-        }
-    }
-
-    &_ttl {
-        @include rem(36);
-        line-height: 1.72;
-    }
-    &_txt {
-        margin-top: 75px;
-        line-height: 2;
-    }
-
-    .site_link {
-        margin-top: 75px;
-    }
-}
 
 
 

@@ -167,14 +167,14 @@ nav
 .site_link {
     display: block;
     width: 200px;
-    // height: 56px;
+    height: 56px;
 
     @include rem(16);
     color: $cBlack;
 
-    padding: 20px 0;
+    // padding: 20px 0;
     text-align: center;
-    line-height: 2; // xd数値÷ fontsize
+    line-height: 2em; // xd数値÷ fontsize
     border: 1px solid $cBlack;
 
 }

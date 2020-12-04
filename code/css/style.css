@@ -29,10 +29,6 @@ font-size定義
 flex定義
 
 **************/
-html {
-  font-size: 62.5%;
-}
-
 body {
   font-size: 10px;
   /*IE9以前に対応する*/
@@ -260,13 +256,15 @@ nav
 
 .site_link {
   display: block;
+  width: 200px;
   font-size: 16px;
   /*IE9以前に対応する*/
   font-size: 1rem;
-  color: #ffffff;
+  color: #000000;
   padding: 20px 0;
   text-align: center;
-  line-height: 2em;
+  line-height: 2;
+  border: 1px solid #000000;
 }
 
 /****************************************:
@@ -295,6 +293,7 @@ header
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  line-height: 54px;
 }
 
 .header_ttl {
@@ -315,19 +314,24 @@ header
   z-index: 1;
   background-size: contain;
   left: -40px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .header_link {
+  font-size: 25px;
+  /*IE9以前に対応する*/
+  font-size: 1.5625rem;
   width: 100%;
   height: 100%;
   display: block;
-  font-size: 3rem;
 }
 
 .header_btnbox {
   background: #978F10;
   position: absolute;
-  right: 0;
+  right: 20px;
   margin-right: 20px;
   width: 170px;
   color: #ffffff;
@@ -344,6 +348,11 @@ fv
 *****************************************:*/
 .top {
   position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
 }
 
 .top_mv_imgbox {
@@ -352,7 +361,7 @@ fv
   left: 0;
   right: 0;
   height: 100vh;
-  height: 1079px;
+  height: 100%;
 }
 
 .top_mv_img {
@@ -374,6 +383,24 @@ fv
           transform: scale(1.05);
 }
 
+.top_mv_copy {
+  font-size: 34px;
+  /*IE9以前に対応する*/
+  font-size: 2.125rem;
+  line-height: 2.5;
+  color: #ffffff;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  z-index: 1;
+  letter-spacing: .2em;
+  position: absolute;
+  right: 25%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
 /****************************************:
 
 top_about
@@ -382,7 +409,6 @@ top_about
 .top_about {
   background: url(../img/common/bg.jpg) center/cover;
   width: 100%;
-  margin-top: 1031px;
 }
 
 .top_about .section_inner {
@@ -409,7 +435,12 @@ top_about
   font-size: 16px;
   /*IE9以前に対応する*/
   font-size: 1rem;
-  margin-right: 118px;
+  margin-right: auto;
+}
+
+.top_about_txtbox:nth-child() {
+  margin-right: 0;
+  margin-left: auto;
 }
 
 .top_about_txt {
@@ -423,6 +454,88 @@ top_about
   font-size: 22px;
   /*IE9以前に対応する*/
   font-size: 1.375rem;
+}
+
+/****************************************:
+
+top_guide
+
+*****************************************:*/
+.top_guide {
+  padding: 106px 0 78px;
+}
+
+.top_guide_box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 122px;
+}
+
+.top_guide_box:nth-child(2n) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.top_guide_imgbox {
+  display: block;
+  width: 1050px;
+  height: 545px;
+  margin-right: 137px;
+}
+
+.top_guide_imgbox.room_img {
+  background: url(../img/section-oheya/oheya-top.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.top_guide_imgbox.menu_img {
+  background: url(../img/section-menu/menu-top.jpg) center no-repeat;
+  background-size: cover;
+  margin-right: 0;
+}
+
+.top_guide_imgbox.onsen_img {
+  background: url(../img/section-onsen/onsen-top.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.top_guide_txtbox {
+  color: #000000;
+  margin-right: auto;
+}
+
+.top_guide_txtbox:nth-child() {
+  margin-left: 408px;
+  margin-right: 0;
+}
+
+.top_guide_ttl {
+  font-size: 36px;
+  /*IE9以前に対応する*/
+  font-size: 2.25rem;
+  line-height: 1.72;
+}
+
+.top_guide_txt {
+  margin-top: 75px;
+  line-height: 2;
+}
+
+.top_guide .site_link {
+  margin-top: 75px;
 }
 
 /****************************************:

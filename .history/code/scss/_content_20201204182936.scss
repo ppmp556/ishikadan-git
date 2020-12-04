@@ -213,10 +213,9 @@ top_guide
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        margin-top: 122px;
 
         
-        &:nth-child(2n) {
+        &:nth-child() {
             flex-direction: row-reverse;
         }
     }
@@ -235,7 +234,6 @@ top_guide
         &.menu_img {
             background: url(../img/section-menu/menu-top.jpg) center no-repeat;
             background-size: cover;
-            margin-right: 0;
             
         }
         &.onsen_img {
@@ -248,7 +246,7 @@ top_guide
     }
 
     &_txtbox {
-        // width: 50%;
+        width: 25%;
         // margin: 0 auto;
         color: $cBlack;
         margin-right: auto;

@@ -227,6 +227,9 @@ top_guide
         height: 545px;
         margin-right: 137px;
         
+        &:nth-child(2n) {
+            margin-right: initial;
+        }
         &.room_img {
             background: url(../img/section-oheya/oheya-top.jpg) center no-repeat;
             background-size: cover;
@@ -235,7 +238,6 @@ top_guide
         &.menu_img {
             background: url(../img/section-menu/menu-top.jpg) center no-repeat;
             background-size: cover;
-            margin-right: 0;
             
         }
         &.onsen_img {
@@ -248,7 +250,7 @@ top_guide
     }
 
     &_txtbox {
-        // width: 50%;
+        width: 50%;
         // margin: 0 auto;
         color: $cBlack;
         margin-right: auto;
