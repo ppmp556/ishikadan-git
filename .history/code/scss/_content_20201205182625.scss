@@ -296,20 +296,19 @@ top-plan
     .section_inner {
         width: 100%;
         max-width: 1180px;
-        padding: 60px 0 144px;
+        padding: 149px 0 54px;
     }
 
     .top_section_ttl {
         @include rem(36);
         text-align: center;
+        position: relative;
 
-        &::before {
-            content: '';
-            background: url(../img/common/logo02.png) top left / contain no-repeat;
+        &:before {
+            position: absolute;
+            background: url(../img/common/logo02.png) center no-repeat;
             width: 40px;
             height: 40px;
-            display: block;
-            margin: 0 auto 20px;
         }
     }
 
@@ -325,10 +324,6 @@ top-plan
     }
     &_img {
         display: block;
-    }
-
-    &_ttl {
-        margin-top: 32px;
     }
 
  

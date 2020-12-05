@@ -505,6 +505,7 @@ top_guide
   background: url(../img/section-menu/menu-top.jpg) center no-repeat;
   background-size: cover;
   margin-right: 0;
+  margin-left: 174px;
 }
 
 .top_guide_imgbox.onsen_img {
@@ -515,10 +516,11 @@ top_guide
 .top_guide_txtbox {
   color: #000000;
   margin-right: auto;
+  margin-top: 32px;
 }
 
-.top_guide_txtbox:nth-child() {
-  margin-left: 408px;
+.top_guide_txtbox.__left {
+  margin-left: auto;
   margin-right: 0;
 }
 
@@ -530,12 +532,74 @@ top_guide
 }
 
 .top_guide_txt {
+  font-size: 16px;
+  /*IE9以前に対応する*/
+  font-size: 1rem;
   margin-top: 75px;
   line-height: 2;
 }
 
 .top_guide .site_link {
   margin-top: 75px;
+}
+
+/****************************************:
+
+top-plan
+
+*****************************************:*/
+.top_plan {
+  background: url(../img/common/bg02.jpg) center/cover no-repeat;
+  width: 100%;
+  height: 775px;
+  display: block;
+}
+
+.top_plan .section_inner {
+  width: 100%;
+  max-width: 1180px;
+  padding: 60px 0 144px;
+}
+
+.top_plan .top_section_ttl {
+  font-size: 36px;
+  /*IE9以前に対応する*/
+  font-size: 2.25rem;
+  text-align: center;
+}
+
+.top_plan .top_section_ttl::before {
+  content: '';
+  background: url(../img/common/logo02.png) top left/contain no-repeat;
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.top_plan_content {
+  margin-top: 66px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.top_plan_imgbox {
+  width: 331px;
+  height: 209px;
+}
+
+.top_plan_img {
+  display: block;
+}
+
+.top_plan_ttl {
+  margin-top: 32px;
 }
 
 /****************************************:
