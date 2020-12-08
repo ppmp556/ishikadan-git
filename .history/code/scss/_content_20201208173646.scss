@@ -319,46 +319,26 @@ top-plan
         justify-content: space-between;
     }
 
-    &_item {
-        width: 340px;
-    }
-
     &_imgbox {
         width: 331px;
         height: 209px;
         overflow: hidden;
 
+        &:nth-child(1) {
+            background-position: 50%;
+        }
     }
     &_img {
         display: block;
     }
 
     &_ttl {
-        @include rem(20);
         margin-top: 32px;
-        line-height: 1.6;
-    }
-
-    &_txt {
-        @include rem(16);
-        line-height: 2;
-        margin-top: 36px;
-        letter-spacing: 0;
     }
 
  
 
 }
-
-
-
-
-/****************************************:
-
-news
-
-*****************************************:*/
-
 
 
 

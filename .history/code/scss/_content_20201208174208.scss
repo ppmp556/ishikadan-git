@@ -320,15 +320,15 @@ top-plan
     }
 
     &_item {
-        width: 340px;
-    }
-
-    &_imgbox {
         width: 331px;
-        height: 209px;
-        overflow: hidden;
-
     }
+
+    // &_imgbox {
+    //     width: 331px;
+    //     height: 209px;
+    //     overflow: hidden;
+
+    // }
     &_img {
         display: block;
     }
@@ -343,22 +343,11 @@ top-plan
         @include rem(16);
         line-height: 2;
         margin-top: 36px;
-        letter-spacing: 0;
     }
 
  
 
 }
-
-
-
-
-/****************************************:
-
-news
-
-*****************************************:*/
-
 
 
 

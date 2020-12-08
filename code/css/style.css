@@ -33,8 +33,6 @@ body {
   font-size: 10px;
   /*IE9以前に対応する*/
   font-size: 0.625rem;
-  font-size: 1.6em;
-  font-size: 16px;
   margin: 0 auto;
   font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
   color: #000000;
@@ -91,6 +89,7 @@ body {
 .section_inner {
   margin: 0 auto;
   padding: 0 20px;
+  max-width: 1180px;
 }
 
 /****************************************:
@@ -360,8 +359,8 @@ fv
   top: 0;
   left: 0;
   right: 0;
-  height: 100vh;
   height: 100%;
+  overflow: hidden;
 }
 
 .top_mv_img {
@@ -589,9 +588,14 @@ top-plan
           justify-content: space-between;
 }
 
+.top_plan_item {
+  width: 340px;
+}
+
 .top_plan_imgbox {
   width: 331px;
   height: 209px;
+  overflow: hidden;
 }
 
 .top_plan_img {
@@ -599,9 +603,27 @@ top-plan
 }
 
 .top_plan_ttl {
+  font-size: 20px;
+  /*IE9以前に対応する*/
+  font-size: 1.25rem;
   margin-top: 32px;
+  line-height: 1.6;
 }
 
+.top_plan_txt {
+  font-size: 16px;
+  /*IE9以前に対応する*/
+  font-size: 1rem;
+  line-height: 2;
+  margin-top: 36px;
+  letter-spacing: 0;
+}
+
+/****************************************:
+
+news
+
+*****************************************:*/
 /****************************************:
 
 footer
