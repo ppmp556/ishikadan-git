@@ -171,12 +171,10 @@ nav
     text-align: center;
     line-height: 2; // xd数値÷ fontsize
     border: 1px solid $cBlack;
-    position: relative;
 
     &::before {
-        position: absolute;
         content: '';
-        background: url(../img/common/calender.png) left / contain no-repeat;
+        background: url(../img/common/calender.png) contain no-repeat;
         width: 22px;
         height: 22px;
         display: block;

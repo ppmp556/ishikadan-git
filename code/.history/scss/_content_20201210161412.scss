@@ -55,12 +55,24 @@ header
         position: absolute;
         right: 20px;
         margin-right: 20px;
-        // width: 170px;
+        width: 170px;
         color: $cWhite;
         text-align: center;
         @include rem(16);
 
     }
+
+    // .headbtn::before {
+    //     position: absolute;
+    //     content: "";
+    //     background: url(../img/common/calender.png) center no-repeat;
+    //     width: 22px;
+    //     height: 22px;
+    //     background-size: contain;
+    //     display: block;
+
+
+    // }
 
 
 }
@@ -551,14 +563,12 @@ footer
         @include rem(36);
         text-align: center;
         margin-bottom: 72px;
-        letter-spacing: 5px;
-        font-weight: bold;
 
         &::before {
             content: '';
             background: url(../img/common/logo02.png) top left / contain no-repeat;
-            width: 60px;
-            height: 60px;
+            width: 40px;
+            height: 40px;
             display: block;
             margin: 0 auto 20px;
         }
@@ -566,22 +576,16 @@ footer
     }
 
     &_access_box {
-        @include rem(16);
         display: flex;
         justify-content: center;
 
-    }
-
-    &_access_txt {
-        margin-bottom: 61px;
-        line-height: 3;
-        letter-spacing: 2.88px;
     }
 
     &_txtbox {
         line-height: 60px;
         text-align: center;
         background-color: $cBlack;
+        margin-bottom: 61px;
     }
 
     &_txt {

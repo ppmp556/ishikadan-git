@@ -225,7 +225,7 @@ nav
 
 .nav_link::after {
   position: absolute;
-  bottom: -5px;
+  bottom: -2px;
   left: 0;
   content: '';
   width: 100%;
@@ -246,13 +246,6 @@ nav
           transform: scale(1, 1);
 }
 
-.nav_link:hover {
-  color: #ffffff;
-  letter-spacing: .5em;
-  -webkit-transition: .5s;
-  transition: .5s;
-}
-
 .site_link {
   display: block;
   width: 200px;
@@ -264,6 +257,17 @@ nav
   text-align: center;
   line-height: 2;
   border: 1px solid #000000;
+  position: relative;
+}
+
+.site_link::before {
+  position: absolute;
+  content: '';
+  background: url(../img/common/calender.png) left/contain no-repeat;
+  width: 22px;
+  height: 22px;
+  display: block;
+  margin: 0 auto 20px;
 }
 
 /****************************************:
@@ -332,7 +336,6 @@ header
   position: absolute;
   right: 20px;
   margin-right: 20px;
-  width: 170px;
   color: #ffffff;
   text-align: center;
   font-size: 16px;
@@ -434,7 +437,7 @@ top_about
   font-size: 16px;
   /*IE9以前に対応する*/
   font-size: 1rem;
-  margin-right: auto;
+  margin-right: 118px;
 }
 
 .top_about_txtbox:nth-child() {
@@ -462,6 +465,10 @@ top_guide
 *****************************************:*/
 .top_guide {
   padding: 106px 0 78px;
+}
+
+.top_guide .section_inner {
+  max-width: 1920px;
 }
 
 .top_guide_box {
@@ -624,8 +631,278 @@ top-plan
 news
 
 *****************************************:*/
+.top_news .section_inner {
+  width: 100%;
+  max-width: 1180px;
+  padding: 60px 0 40px;
+}
+
+.top_news .section_ttl {
+  font-size: 36px;
+  /*IE9以前に対応する*/
+  font-size: 2.25rem;
+  text-align: center;
+}
+
+.top_news .section_ttl::before {
+  content: '';
+  background: url(../img/common/logo02.png) top left/contain no-repeat;
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.top_news_list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  margin: 46px 0 49px;
+}
+
+.top_news_item {
+  font-size: 16px;
+  /*IE9以前に対応する*/
+  font-size: 1rem;
+  margin: 0 26px;
+}
+
+.top_news_contentitem {
+  font-size: 16px;
+  /*IE9以前に対応する*/
+  font-size: 1rem;
+  background-color: #f6f6f6;
+  padding: 15px 10px;
+  margin-bottom: 20px;
+}
+
+.top_news_contentlist {
+  max-width: 1180px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.top_news_flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+}
+
+.top_news_imgbox {
+  width: 103px;
+  height: 100%;
+  margin-right: 30px;
+}
+
+.top_news_img {
+  display: block;
+}
+
+.top_news_txtbox {
+  width: 388px;
+}
+
+.top_news_date {
+  font-size: 14px;
+  /*IE9以前に対応する*/
+  font-size: 0.875rem;
+}
+
+.top_news_txt {
+  font-size: 16px;
+  /*IE9以前に対応する*/
+  font-size: 1rem;
+}
+
+/****************************************:
+
+access
+
+*****************************************:*/
+.top_access {
+  background: url(../img/common/bg.jpg);
+}
+
+.top_access .section_inner {
+  padding: 60px 0 110px;
+}
+
+.top_access .section_ttl {
+  font-size: 36px;
+  /*IE9以前に対応する*/
+  font-size: 2.25rem;
+  text-align: center;
+  margin-bottom: 49px;
+}
+
+.top_access .section_ttl::before {
+  content: '';
+  background: url(../img/common/logo02.png) top left/contain no-repeat;
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.top_access_flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  margin-bottom: 69px;
+}
+
+.top_access_flex.flex_center {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 0;
+}
+
+.top_access_img {
+  background: url(../img/common/access.jpg) center no-repeat;
+  height: 370px;
+  width: 75%;
+  background-size: cover;
+  display: block;
+}
+
+.top_access_box {
+  margin-left: 83px;
+}
+
+.top_access_txt {
+  font-size: 16px;
+  /*IE9以前に対応する*/
+  font-size: 1rem;
+  line-height: 2;
+  width: 180%;
+}
+
 /****************************************:
 
 footer
 
 *****************************************:*/
+.footer_inner {
+  background: url(../img/common/bg3.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.footer_nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer_list {
+  margin-top: 64px;
+  text-align: center;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  margin-bottom: 96px;
+}
+
+.footer_item {
+  font-size: 18px;
+  /*IE9以前に対応する*/
+  font-size: 1.125rem;
+  margin: 0 15px;
+  line-height: 1.78;
+  letter-spacing: 1.2em;
+  text-align: start;
+}
+
+.footer_ttl {
+  font-size: 36px;
+  /*IE9以前に対応する*/
+  font-size: 2.25rem;
+  text-align: center;
+  margin-bottom: 72px;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+
+.footer_ttl::before {
+  content: '';
+  background: url(../img/common/logo02.png) top left/contain no-repeat;
+  width: 60px;
+  height: 60px;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.footer_access_box {
+  font-size: 16px;
+  /*IE9以前に対応する*/
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer_access_txt {
+  margin-bottom: 61px;
+  line-height: 3;
+  letter-spacing: 2.88px;
+}
+
+.footer_txtbox {
+  line-height: 60px;
+  text-align: center;
+  background-color: #000000;
+}
+
+.footer_txt {
+  font-size: 12px;
+  /*IE9以前に対応する*/
+  font-size: 0.75rem;
+  color: #ffffff;
+}
