@@ -267,7 +267,8 @@ nav
   width: 22px;
   height: 22px;
   display: block;
-  margin: 0 auto 20px;
+  margin: auto;
+  left: 37px;
 }
 
 /****************************************:
@@ -335,12 +336,15 @@ header
   background: #978F10;
   position: absolute;
   right: 20px;
-  margin-right: 20px;
-  color: #ffffff;
   text-align: center;
   font-size: 16px;
   /*IE9以前に対応する*/
   font-size: 1rem;
+}
+
+.header .site_link {
+  color: #ffffff;
+  border-color: #978F10;
 }
 
 /****************************************:
@@ -905,4 +909,151 @@ footer
   /*IE9以前に対応する*/
   font-size: 0.75rem;
   color: #ffffff;
+}
+
+/****************************************:
+
+下層ヘッダー
+
+*****************************************:*/
+.header.color_head {
+  background: #ffffff;
+}
+
+.header .color_head {
+  color: #000000;
+}
+
+.header_ttl.under_logo::before {
+  position: absolute;
+  content: "";
+  background: url(../img/common/logo02.png) center no-repeat;
+  width: 40px;
+  height: 40px;
+  display: block;
+  z-index: 1;
+  background-size: contain;
+  left: -40px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+/****************************************:
+
+oheya
+
+*****************************************:*/
+.oheya_mv {
+  position: relative;
+}
+
+.oheya_mv_imgbox {
+  background: url(../img/section-oheya/oheya-header.jpg) center center;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  height: 500px;
+  width: 100%;
+}
+
+.oheya_mv .mv_copy {
+  font-size: 34px;
+  /*IE9以前に対応する*/
+  font-size: 2.125rem;
+  color: #ffffff;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+/****************************************:
+
+oheyaコンテンツ
+
+*****************************************:*/
+.main_container {
+  margin-top: 580px;
+}
+
+.oheya_intro_txtbox {
+  margin: 98px 0 135px;
+  text-align: center;
+}
+
+.oheya_intro_txt {
+  line-height: 2;
+  font-size: 16px;
+  /*IE9以前に対応する*/
+  font-size: 1rem;
+}
+
+.oheya_content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 141px;
+}
+
+.oheya_content:nth-child(even) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.oheya_imgbox {
+  width: 525px;
+  height: 300px;
+  margin-top: -57px;
+}
+
+.oheya_img {
+  display: block;
+  height: 100%;
+}
+
+.oheya_txtbox {
+  background: url(../img/common/bg.jpg);
+  width: 813px;
+  height: 381px;
+  z-index: -1;
+  margin-left: -158px;
+}
+
+.oheya_txtbox.__mg {
+  margin-left: 0;
+  margin-right: -158px;
+}
+
+.oheya_txtbox .__txtmg {
+  margin-left: 60px;
+}
+
+.oheya_ttl {
+  margin-top: 60px;
+  margin-left: 238px;
+  font-size: 24px;
+  /*IE9以前に対応する*/
+  font-size: 1.5rem;
+}
+
+.oheya_txt {
+  margin-top: 52px;
+  margin-left: 238px;
+  font-size: 16px;
+  /*IE9以前に対応する*/
+  font-size: 1rem;
+}
+
+.oheya_txt.__txt {
+  font-size: 14px;
+  /*IE9以前に対応する*/
+  font-size: 0.875rem;
 }
