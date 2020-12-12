@@ -92,6 +92,11 @@ body {
   max-width: 1180px;
 }
 
+.site_img {
+  display: block;
+  height: 100%;
+}
+
 /****************************************:
 
 nav
@@ -246,6 +251,24 @@ nav
           transform: scale(1, 1);
 }
 
+.site_btn {
+  position: relative;
+}
+
+.site_btn.__headbtn::before {
+  position: absolute;
+  content: '';
+  background: url(../img/common/calender.png) left/contain no-repeat;
+  width: 22px;
+  height: 22px;
+  display: block;
+  margin: auto;
+  left: 37px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
 .site_link {
   display: block;
   width: 200px;
@@ -260,15 +283,29 @@ nav
   position: relative;
 }
 
-.site_link::before {
-  position: absolute;
+.site_list {
+  margin-top: 36px;
+  display: inline-block;
+}
+
+.site_list_item {
+  display: inline;
+  font-size: 14px;
+}
+
+.site_list_item:last-child::after {
   content: '';
-  background: url(../img/common/calender.png) left/contain no-repeat;
-  width: 22px;
-  height: 22px;
-  display: block;
-  margin: auto;
-  left: 37px;
+}
+
+.site_list_item::after {
+  content: '＞';
+  padding: 0 16px;
+}
+
+.site_list_link {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
 }
 
 /****************************************:
@@ -941,14 +978,14 @@ footer
 
 /****************************************:
 
-oheya
+下層ページ mv
 
 *****************************************:*/
-.oheya_mv {
+.under_mv {
   position: relative;
 }
 
-.oheya_mv_imgbox {
+.under_mv .oheya_imgbox {
   background: url(../img/section-oheya/oheya-header.jpg) center center;
   position: absolute;
   top: 80px;
@@ -958,7 +995,27 @@ oheya
   width: 100%;
 }
 
-.oheya_mv .mv_copy {
+.under_mv .menu_imgbox {
+  background: url(../img/section-menu/menu-header.jpg) center center;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  height: 500px;
+  width: 100%;
+}
+
+.under_mv .onsen_imgbox {
+  background: url(../img/section-onsen/onsen-header.jpg) center center;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  height: 500px;
+  width: 100%;
+}
+
+.mv_copy {
   font-size: 34px;
   /*IE9以前に対応する*/
   font-size: 2.125rem;
@@ -973,26 +1030,26 @@ oheya
 
 /****************************************:
 
-oheyaコンテンツ
+underコンテンツ
 
 *****************************************:*/
 .main_container {
   margin-top: 580px;
 }
 
-.oheya_intro_txtbox {
+.intro_txtbox {
   margin: 98px 0 135px;
   text-align: center;
 }
 
-.oheya_intro_txt {
+.intro_txt {
   line-height: 2;
   font-size: 16px;
   /*IE9以前に対応する*/
   font-size: 1rem;
 }
 
-.oheya_content {
+.under_content {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1000,7 +1057,7 @@ oheyaコンテンツ
   margin-bottom: 141px;
 }
 
-.oheya_content:nth-child(even) {
+.under_content:nth-child(even) {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
   -webkit-flex-direction: row-reverse;
@@ -1008,18 +1065,13 @@ oheyaコンテンツ
           flex-direction: row-reverse;
 }
 
-.oheya_imgbox {
+.under_imgbox {
   width: 525px;
   height: 300px;
   margin-top: -57px;
 }
 
-.oheya_img {
-  display: block;
-  height: 100%;
-}
-
-.oheya_txtbox {
+.under_txtbox {
   background: url(../img/common/bg.jpg);
   width: 813px;
   height: 381px;
@@ -1027,16 +1079,16 @@ oheyaコンテンツ
   margin-left: -158px;
 }
 
-.oheya_txtbox.__mg {
+.under_txtbox.__mg {
   margin-left: 0;
   margin-right: -158px;
 }
 
-.oheya_txtbox .__txtmg {
+.under_txtbox .__txtmg {
   margin-left: 60px;
 }
 
-.oheya_ttl {
+.under_ttl {
   margin-top: 60px;
   margin-left: 238px;
   font-size: 24px;
@@ -1044,7 +1096,7 @@ oheyaコンテンツ
   font-size: 1.5rem;
 }
 
-.oheya_txt {
+.under_txt {
   margin-top: 52px;
   margin-left: 238px;
   font-size: 16px;
@@ -1052,8 +1104,58 @@ oheyaコンテンツ
   font-size: 1rem;
 }
 
-.oheya_txt.__txt {
+.under_txt.__txt {
   font-size: 14px;
   /*IE9以前に対応する*/
   font-size: 0.875rem;
+}
+
+.onsen_table_wrap {
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  margin-bottom: 96.5px;
+}
+
+.onsen_ttl {
+  padding-top: 95.5px;
+  margin-bottom: 51.5px;
+  text-align: center;
+  font-size: 26px;
+  /*IE9以前に対応する*/
+  font-size: 1.625rem;
+}
+
+.onsen_table {
+  font-size: 15px;
+  /*IE9以前に対応する*/
+  font-size: 0.9375rem;
+  line-height: 2.13;
+  max-width: 880px;
+  margin-bottom: 74px;
+  margin-left: 150px;
+}
+
+.onsen_table .flame {
+  border-top: 1px solid #E7E7E7;
+  border-bottom: 1px solid #E7E7E7;
+}
+
+.onsen_table .head {
+  text-align: left;
+  margin-right: 160px;
+  display: inline-block;
+  width: 100%;
+  line-height: 2.13;
+}
+
+.onsen_table .data {
+  text-align: left;
+  padding: 17.5px 0;
+  font-size: 15px;
+  /*IE9以前に対応する*/
+  font-size: 0.9375rem;
+}
+
+.onsen_table .data.__hight {
+  line-height: 1.47;
 }

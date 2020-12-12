@@ -637,55 +637,73 @@ footer
 
 /****************************************:
 
-下層ページ mv
+oheya
 
 *****************************************:*/
 
-.under_mv {
+.oheya_mv {
     position: relative;
 
-    .oheya_imgbox {
+    &_imgbox {
         background: url(../img/section-oheya/oheya-header.jpg) center center;
         position: absolute;
         top: 80px;
         left: 0;
         right: 0;
+        // height: 100vh;
         height: 500px;
         width: 100%;
+        // overflow: hidden;
+        // display: flex;
     }
-    .menu_imgbox {
+
+}
+        .mv_copy {
+            @include rem(34);
+            color: $cWhite;
+            margin: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+        }
+
+
+
+/****************************************:
+
+menu
+
+*****************************************:*/
+
+.oheya_mv {
+    position: relative;
+
+    &_imgbox {
         background: url(../img/section-menu/menu-header.jpg) center center;
         position: absolute;
         top: 80px;
         left: 0;
         right: 0;
+        // height: 100vh;
         height: 500px;
         width: 100%;
+        // overflow: hidden;
+        // display: flex;
     }
-    .onsen_imgbox {
-        background: url(../img/section-onsen/onsen-header.jpg) center center;
+
+    .mv_copy {
+        @include rem(34);
+        color: $cWhite;
+        margin: auto;
         position: absolute;
-        top: 80px;
-        left: 0;
-        right: 0;
-        height: 500px;
-        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
     }
-
 }
-
-
-.mv_copy {
-    @include rem(34);
-    color: $cWhite;
-    margin: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
-}
-
 
 
 

@@ -174,8 +174,6 @@ nav
         display: block;
         margin: auto;
         left: 37px;
-        top: 50%;
-        transform: translateY(-50%);
     }
 
 }
@@ -205,10 +203,8 @@ nav
 // パンくずリスト
 
 .site_list {
-    margin-top: 36px;
-    display: inline-block;
 
-    &_item {
+    &-item {
         display: inline;
         font-size: 14px;
         &:last-child::after {
@@ -221,7 +217,7 @@ nav
         padding: 0 16px;
     }
 
-    &_link {
+    &-item-Link {
         display: inline-block;
         text-decoration: none;
         color: inherit;

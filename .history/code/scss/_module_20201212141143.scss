@@ -205,10 +205,8 @@ nav
 // パンくずリスト
 
 .site_list {
-    margin-top: 36px;
-    display: inline-block;
 
-    &_item {
+    &-item {
         display: inline;
         font-size: 14px;
         &:last-child::after {

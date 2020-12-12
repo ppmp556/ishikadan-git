@@ -637,63 +637,41 @@ footer
 
 /****************************************:
 
-下層ページ mv
+oheya
 
 *****************************************:*/
 
-.under_mv {
+.oheya_mv {
     position: relative;
 
-    .oheya_imgbox {
+    &_imgbox {
         background: url(../img/section-oheya/oheya-header.jpg) center center;
         position: absolute;
         top: 80px;
         left: 0;
         right: 0;
+        // height: 100vh;
         height: 500px;
         width: 100%;
+        // overflow: hidden;
+        // display: flex;
     }
-    .menu_imgbox {
-        background: url(../img/section-menu/menu-header.jpg) center center;
+
+    .mv_copy {
+        @include rem(34);
+        color: $cWhite;
+        margin: auto;
         position: absolute;
-        top: 80px;
-        left: 0;
-        right: 0;
-        height: 500px;
-        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
     }
-    .onsen_imgbox {
-        background: url(../img/section-onsen/onsen-header.jpg) center center;
-        position: absolute;
-        top: 80px;
-        left: 0;
-        right: 0;
-        height: 500px;
-        width: 100%;
-    }
-
 }
-
-
-.mv_copy {
-    @include rem(34);
-    color: $cWhite;
-    margin: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
-}
-
-
-
-
-
 
 /****************************************:
 
-underコンテンツ
+oheyaコンテンツ
 
 *****************************************:*/
 
@@ -701,18 +679,18 @@ underコンテンツ
     margin-top: 580px;
 }
 
-.intro_txtbox {
-    margin: 98px 0 135px;
-    text-align: center;
-}
 
-.intro_txt {
-    line-height: 2;
-    @include rem(16);
-}
+.oheya {
 
-.under {
-
+    &_intro_txtbox {
+        margin: 98px 0 135px;
+        text-align: center;
+    }
+    
+    &_intro_txt {
+        line-height: 2;
+        @include rem(16);
+    }
 
     &_content {
         display: flex;
@@ -729,7 +707,10 @@ underコンテンツ
 
     }
 
-
+    &_img {
+        display: block;
+        height: 100%;
+    }
 
     &_txtbox {
         background: url(../img/common/bg.jpg);
@@ -770,52 +751,15 @@ underコンテンツ
 
 }
 
-.onsen_table_wrap {
+.onsen_table {
     border-top: 1px solid $cBlack;
-    border-bottom: 1px solid $cBlack;
-    margin-bottom: 96.5px;
-
-
 }
 
 
 .onsen_ttl {
-    padding-top: 95.5px;
-    margin-bottom: 51.5px;
     // margin-bottom: 51.5px;
     text-align: center;
-    // line-height: 1.23;
+    line-height: 1.23;
     @include rem(26);
-
-}
-
-.onsen_table {
-    @include rem(15);
-    line-height: 2.13;
-    max-width: 880px;
-    margin-bottom: 74px;
-    margin-left: 150px;
-
-    .flame {
-        border-top: 1px solid #E7E7E7;
-        border-bottom: 1px solid #E7E7E7;
-    }
-
-    .head {
-        text-align: left;
-        margin-right: 160px;
-        display: inline-block;
-        width: 100%;
-        line-height: 2.13;
-    }
-    .data {
-        text-align: left;
-        padding: 17.5px 0;
-        @include rem(15);
-
-        &.__hight {
-            line-height: 1.47;
-        }
-    }
 }
 

@@ -174,8 +174,6 @@ nav
         display: block;
         margin: auto;
         left: 37px;
-        top: 50%;
-        transform: translateY(-50%);
     }
 
 }
@@ -199,32 +197,3 @@ nav
 
 
 }
-
-
-
-// パンくずリスト
-
-.site_list {
-    margin-top: 36px;
-    display: inline-block;
-
-    &_item {
-        display: inline;
-        font-size: 14px;
-        &:last-child::after {
-            content: '';
-        }
-    }
-
-    &_item::after {
-        content: '＞';
-        padding: 0 16px;
-    }
-
-    &_link {
-        display: inline-block;
-        text-decoration: none;
-        color: inherit;
-    }
-}
-
