@@ -1,24 +1,28 @@
 // ベーススタイル用
 
 
-html {
-    // ルートのフォントサイズ 10pxに設定
-    font-size: 62.5%;
-}
+// html {
+//     // ルートのフォントサイズ 10pxに設定
+//     font-size: 62.5%;
+// }
 
 body {
 
     @include rem(10);
 
     // デフォルトのフォントサイズ 16pxと同等のサイズに設定
-    font-size: 1.6em;
-    font-size: 16px;
+    // font-size: 1.6em;
+    // font-size: 16px;
     margin: 0 auto;
-    letter-spacing: .5em;
+    // letter-spacing: .5em;
     font-family: $fontMain;
     color: $cBlack;
 
     // width: 375px;
+
+    .fix {
+        overflow: hidden;
+    }
 }
 
 
@@ -35,7 +39,7 @@ body {
 }
 
 .container {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     // color: $cWhite;
     /* position: relative; */
@@ -72,16 +76,13 @@ body {
 
 
 
-// コンテンツ幅
-.inner {
-    margin: 0 15px;
-}
+
 
 
 
 //共通タイトル
 .section_ttl {
-    @include rem(18);
+    @include rem(36);
     display: block;
     text-align: center;
 }
@@ -91,5 +92,14 @@ body {
 .section_inner {
     margin: 0 auto;
     padding: 0 20px;
+    max-width: 1180px;
+
+
+}
+
+.site_img {
+
+        display: block;
+        height: 100%;
 
 }

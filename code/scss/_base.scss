@@ -19,6 +19,10 @@ body {
     color: $cBlack;
 
     // width: 375px;
+
+    &.fix {
+        overflow: hidden;
+    }
 }
 
 
