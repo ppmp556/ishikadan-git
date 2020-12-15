@@ -77,41 +77,40 @@
           <div class="calendar_close">
             <img src="./img/common/close.png" alt="" class="calendar_img">
 
-          </div><!-- /.calendar_ttlwrap -->
+        </div><!-- /.calendar_ttlwrap -->
 
+        <form action="" method="post" class="calendar_form">
           <div class="calendar_inner">
-            <form action="" method="post" class="calendar_form">
-                <label for="name" class="form_ttl" >お名前</label>
+              <label for="name" class="form_ttl" >お名前</label>
+              <input type="text" id="name" class="form_box" name="" placeholder="例 : 石井正悟" required="required">
 
-                <input type="text" id="name" class="form_box" name="" placeholder="例 : 石井正悟" required="required">
+              <label for="email" class="form_ttl">メールアドレス</label>
+              <input type="email" id="email" class="form_box" name="" placeholder="例 : Example＠example.com" required="required">
 
-                <label for="email" class="form_ttl">メールアドレス</label>
-                <input type="email" id="email" class="form_box" name="" placeholder="例 : Example＠example.com" required="required">
-                <p class="form_ttl">ご希望のプラン　（空いているプランのみ表示されます）</p>
+              <label for="plan" class="form_ttl">ご希望のプラン　（空いているプランのみ表示されます）</label>
+              <select name="" id="plan" class="calendar_select form_box">
+                <optgroup value="">
+                  <option value="" hidden>プランを選択してください</option>
+                  <option value="1">➀【期間限定】海辺の四季旬彩、贅沢美味懐石プラン</option>
+                  <option value="2">➁ 平日に優雅に楽しむ、特別宿泊プラン</option>
+                  <option value="3">⓷ 絶景貸切露天と個室会席を満喫できるファミリープラン</option>
+                </optgroup>
+              </select>
 
-                <select name="" id="plan" class="calendar_select form_box">
-                  <optgroup value="">
-                    <option value="" hidden>プランを選択してください</option>
-                    <option value="1">➀【期間限定】海辺の四季旬彩、贅沢美味懐石プラン</option>
-                    <option value="2">➁ 平日に優雅に楽しむ、特別宿泊プラン</option>
-                    <option value="3">⓷ 絶景貸切露天と個室会席を満喫できるファミリープラン</option>
-                  </optgroup>
-                </select>
 
-                <p for="calendar" class="form_ttl">日時選択</p>
+              <label for="calendar" class="form_ttl">日時選択</label>
+              <input class="flatpickr form_box" id="calendar" data-mindate=today type="text" readonly="readonly" placeholder="日時を選択してください" required="required">
 
-                <input class="flatpickr form_box" id="calendar" data-mindate=today type="text" readonly="readonly" placeholder="日時を選択してください" required="required">
+            <button type="submit" class="contact_link" value="送信" id="js-submit_btn">
+                送　信
+            </button><!-- /.site -->
 
-              <button type="submit" class="contact_link" value="送信" id="js-submit_btn">
-                  送　信
-              </button><!-- /.site -->
-
-            </form>
           </div><!-- /.calendar_inner -->
 
 
+        </form>
       </div><!-- /.calendar -->
-
+      
     </header>
     <div class="top">
       <div class="top_mv_imgbox" id="js-mv_slide">

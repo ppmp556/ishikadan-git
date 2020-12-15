@@ -295,10 +295,6 @@ nav
         flex-direction: column;
     }
 
-    &_form {
-        line-height: 1;
-    }
-
     &_img {
         display: block;
         width: 100%;
@@ -310,7 +306,7 @@ nav
         @include rem(14);
         color: $cContact;
         display: block;
-        // padding: 9px 0;
+        padding: 9px 0;
 
         option {
             @include rem(14);
@@ -328,20 +324,20 @@ nav
 .form_ttl {
     @include rem(16);
     // line-height: 1.68;
-    // margin-bottom: 14px;
+    margin-bottom: 14px;
 }
 
 .form_box {
-    width: 100%;
+    width: 429px;
     // line-height: 32px;
     border: 1px solid $cLgray;
     color: $cContact;
-    // margin-bottom: 14px;
+    margin-bottom: 14px;
 
 }
 
 .contact_link {
-    margin: 50px auto 0;
+    margin: 50px auto 90px;
     width: 198px;
     line-height: 42px;
     background: $cWhite;

@@ -5,7 +5,7 @@ $(() => {
     AOS.init({
         offset: 200,
         delay: 100,
-        duration: 1500,
+        duration: 500,
         easing: 'liner',
         once: true,
 
@@ -14,7 +14,7 @@ $(() => {
     // 実装しないものは適宜追加、削除
 
     // ハンバーガーメニュー
-    $('#js-nav_toggle').click(() => {
+    $('#nav_toggle').click(() => {
         $('.nav_line').toggleClass('clicked');
         $('.nav_ham').toggleClass('clicked');
         $('.nav_list').toggleClass('clicked');

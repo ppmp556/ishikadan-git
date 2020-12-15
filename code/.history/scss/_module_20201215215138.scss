@@ -264,16 +264,15 @@ nav
     transform: translate(-50%, -50%);
     background-color: $cWhite;
     z-index: 20;
-    padding: 29px 60px 90px;
 
 
 
     &_ttl {
-        // margin: 29px auto 0;
+        margin: 29px auto 0;
         padding-bottom: 29.5px;
         @include rem(20);
         text-align: center;
-        // line-height: 1.7;
+        line-height: 1.7;
         border-bottom: 1px solid $cGray;
 
     }
@@ -290,13 +289,9 @@ nav
 
     &_inner {
         margin-top: 35.5px;
-        // padding: 0 60px;
+        padding: 0 60px;
         display: flex;
         flex-direction: column;
-    }
-
-    &_form {
-        line-height: 1;
     }
 
     &_img {
@@ -310,7 +305,7 @@ nav
         @include rem(14);
         color: $cContact;
         display: block;
-        // padding: 9px 0;
+        padding: 9px 0;
 
         option {
             @include rem(14);
@@ -327,21 +322,21 @@ nav
 
 .form_ttl {
     @include rem(16);
-    // line-height: 1.68;
-    // margin-bottom: 14px;
+    line-height: 1.68;
+    margin-bottom: 14px;
 }
 
 .form_box {
-    width: 100%;
-    // line-height: 32px;
+    width: 429px;
+    line-height: 32px;
     border: 1px solid $cLgray;
     color: $cContact;
-    // margin-bottom: 14px;
+    margin-bottom: 14px;
 
 }
 
 .contact_link {
-    margin: 50px auto 0;
+    margin: 50px auto 90px;
     width: 198px;
     line-height: 42px;
     background: $cWhite;

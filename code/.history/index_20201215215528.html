@@ -80,15 +80,23 @@
           </div><!-- /.calendar_ttlwrap -->
 
           <div class="calendar_inner">
-            <form action="" method="post" class="calendar_form">
-                <label for="name" class="form_ttl" >お名前</label>
+            <form action="" method="post">
+              <dl>
+                <dd>
+                  <label for="name" class="form_ttl" >お名前</label>
 
-                <input type="text" id="name" class="form_box" name="" placeholder="例 : 石井正悟" required="required">
+                </dd>
+                <dt>
+                  <input type="text" id="name" class="form_box" name="" placeholder="例 : 石井正悟" required="required">
+
+                </dt>
+
+              </dl>
 
                 <label for="email" class="form_ttl">メールアドレス</label>
                 <input type="email" id="email" class="form_box" name="" placeholder="例 : Example＠example.com" required="required">
-                <p class="form_ttl">ご希望のプラン　（空いているプランのみ表示されます）</p>
 
+                <label for="plan" class="form_ttl">ご希望のプラン　（空いているプランのみ表示されます）</label>
                 <select name="" id="plan" class="calendar_select form_box">
                   <optgroup value="">
                     <option value="" hidden>プランを選択してください</option>
@@ -98,8 +106,8 @@
                   </optgroup>
                 </select>
 
-                <p for="calendar" class="form_ttl">日時選択</p>
 
+                <label for="calendar" class="form_ttl">日時選択</label>
                 <input class="flatpickr form_box" id="calendar" data-mindate=today type="text" readonly="readonly" placeholder="日時を選択してください" required="required">
 
               <button type="submit" class="contact_link" value="送信" id="js-submit_btn">

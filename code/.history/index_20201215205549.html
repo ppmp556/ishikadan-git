@@ -35,7 +35,7 @@
 
        <!-- ハンバーガーメニュー部分 -->
       <div class="nav_ham">
-        <div class="nav_btn" id="js-nav_toggle">
+        <div class="nav_btn" id="nav_toggle">
           <span class="nav_line __tg1"></span>
           <span class="nav_line __tg2"></span>
           <span class="nav_line __tg3"></span>
@@ -77,41 +77,40 @@
           <div class="calendar_close">
             <img src="./img/common/close.png" alt="" class="calendar_img">
 
-          </div><!-- /.calendar_ttlwrap -->
+        </div><!-- /.calendar_ttlwrap -->
 
+        <form action="" method="post" class="calendar_form">
           <div class="calendar_inner">
-            <form action="" method="post" class="calendar_form">
-                <label for="name" class="form_ttl" >お名前</label>
+              <label for="name" class="form_ttl" >お名前</label>
+              <input type="text" id="name" class="form_box" name="" placeholder="例 : 石井正悟" required="required">
 
-                <input type="text" id="name" class="form_box" name="" placeholder="例 : 石井正悟" required="required">
+              <label for="email" class="form_ttl">メールアドレス</label>
+              <input type="email" id="email" class="form_box" name="" placeholder="例 : Example＠example.com" required="required">
 
-                <label for="email" class="form_ttl">メールアドレス</label>
-                <input type="email" id="email" class="form_box" name="" placeholder="例 : Example＠example.com" required="required">
-                <p class="form_ttl">ご希望のプラン　（空いているプランのみ表示されます）</p>
+              <label for="plan" class="form_ttl">ご希望のプラン　（空いているプランのみ表示されます）</label>
+              <select name="" id="plan" class="calendar_select form_box">
+                <optgroup value="">
+                  <option value="" hidden>プランを選択してください</option>
+                  <option value="1">➀【期間限定】海辺の四季旬彩、贅沢美味懐石プラン</option>
+                  <option value="2">➁ 平日に優雅に楽しむ、特別宿泊プラン</option>
+                  <option value="3">⓷ 絶景貸切露天と個室会席を満喫できるファミリープラン</option>
+                </optgroup>
+              </select>
 
-                <select name="" id="plan" class="calendar_select form_box">
-                  <optgroup value="">
-                    <option value="" hidden>プランを選択してください</option>
-                    <option value="1">➀【期間限定】海辺の四季旬彩、贅沢美味懐石プラン</option>
-                    <option value="2">➁ 平日に優雅に楽しむ、特別宿泊プラン</option>
-                    <option value="3">⓷ 絶景貸切露天と個室会席を満喫できるファミリープラン</option>
-                  </optgroup>
-                </select>
 
-                <p for="calendar" class="form_ttl">日時選択</p>
+              <label for="calendar" class="form_ttl">日時選択</label>
+              <input class="flatpickr form_box" id="calendar" data-mindate=today type="text" readonly="readonly" placeholder="日時を選択してください" required="required">
 
-                <input class="flatpickr form_box" id="calendar" data-mindate=today type="text" readonly="readonly" placeholder="日時を選択してください" required="required">
+            <button type="submit" class="contact_link" value="送信" id="js-submit_btn">
+                送　信
+            </button><!-- /.site -->
 
-              <button type="submit" class="contact_link" value="送信" id="js-submit_btn">
-                  送　信
-              </button><!-- /.site -->
-
-            </form>
           </div><!-- /.calendar_inner -->
 
 
+        </form>
       </div><!-- /.calendar -->
-
+      
     </header>
     <div class="top">
       <div class="top_mv_imgbox" id="js-mv_slide">
@@ -135,7 +134,7 @@
           <div class="section_inner">
             <h2 class="section_ttl" data-aos="fade-up">温海温泉の<br>美しさに癒されて</h2>
 
-            <div class="top_about_txtbox" data-aos="fade-up" data-aos-duration="1600">
+            <div class="top_about_txtbox" data-aos="fade-up" data-aos-duration="700">
               <p class="top_about_txt">
                 東北の奥座敷である温海温泉郷<br>
                 開湯は約１３００年前とされ、役小角が<br>
@@ -167,44 +166,44 @@
         <section class="top_guide">
           <div class="section_inner">
             <div class="top_guide_box">
-              <div class="top_guide_imgbox room_img" data-aos="fade-up"></div><!-- /.guide_imgbox -->
+              <div class="top_guide_imgbox room_img"></div><!-- /.guide_imgbox -->
               <!-- <div class="inner"> -->
 
                 <div class="top_guide_txtbox">
-                  <h3 class="top_guide_ttl" data-aos="fade-up" data-aos-duration="1600">
+                  <h3 class="top_guide_ttl">
                     喧噪から離れた空間<br>
                     心落ち着く至極のひととき
                   </h3><!-- /.guide_ttl -->
 
-                  <p class="top_guide_txt" data-aos="fade-up" data-aos-duration="1700">
+                  <p class="top_guide_txt">
                     まるで時が止まったかのような、圧倒的な静寂の中で、<br>
                     ひたすらゆったりと・・・。<br>
                     最高級の「何もしない時間」をお過ごしください。
                   </p><!-- /.guide_txt -->
   
-                    <a href="oheya.html" class="site_link" data-aos="fade-up" data-aos-duration="1700">お部屋について</a>
+                    <a href="oheya.html" class="site_link">お部屋について</a>
   
                 </div><!-- /.top_guide_txtbox -->
   
             </div><!-- /.guide_box -->
   
             <div class="top_guide_box">
-              <div class="top_guide_imgbox menu_img" data-aos="fade-up"></div><!-- /.guide_imgbox -->
+              <div class="top_guide_imgbox menu_img"></div><!-- /.guide_imgbox -->
   
                 <div class="top_guide_txtbox __left">
-                  <h3 class="top_guide_ttl" data-aos="fade-up" data-aos-duration="1600">
+                  <h3 class="top_guide_ttl">
                     出迎えるのは<br>
                     極上の温海料理
                   </h3><!-- /.guide_ttl -->
   
-                  <p class="top_guide_txt" data-aos="fade-up" data-aos-duration="1700">
+                  <p class="top_guide_txt">
                     最も旬の食材を愉しむ、最高の贅沢を<br>
                     最高級A5ランクの米沢牛と共に頂く。<br>
                     あなたの人生史に残る「極上の感動」を<br>
                     お約束します。
                   </p><!-- /.guide_txt -->
   
-                  <a href="menu.html" class="site_link" data-aos="fade-up" data-aos-duration="1700">料理について</a>
+                  <a href="menu.html" class="site_link">料理について</a>
   
                 </div><!-- /.top_guide_txtbox -->
   
@@ -212,21 +211,21 @@
   
   
             <div class="top_guide_box">
-              <div class="top_guide_imgbox onsen_img" data-aos="fade-up"></div><!-- /.guide_imgbox -->
+              <div class="top_guide_imgbox onsen_img"></div><!-- /.guide_imgbox -->
   
               <div class="top_guide_txtbox">
-                <h3 class="top_guide_ttl" data-aos="fade-up" data-aos-duration="1600">
+                <h3 class="top_guide_ttl">
                   疲れ切った身体にやすらぎを<br>
                   温海の源泉に癒されて
                 </h3><!-- /.guide_ttl -->
   
-                <p class="top_guide_txt" data-aos="fade-up" data-aos-duration="1700">
+                <p class="top_guide_txt">
                 古くは弘法大師の病をも治療したと言われる熱海の泉質。<br>
                 現代人の疲弊しきった身体を修復する最高級の湯台場として<br>
                 ご活用ください。<br>
                 </p><!-- /.guide_txt -->
   
-                <a href="onsen.html" class="site_link" data-aos="fade-up" data-aos-duration="1700">温泉について</a>
+                <a href="onsen.html" class="site_link">温泉について</a>
   
               </div><!-- /.top_guide_txtbox -->
   
@@ -250,42 +249,42 @@
 
             <ul class="top_plan_content">
               <li class="top_plan_item">
-                <div class="top_plan_imgbox" data-aos="fade-up">
+                <div class="top_plan_imgbox">
                   <img src="img/section-recommended/recommended01.jpg" alt="朝食付きプラン" class="top_plan_img">
                 </div><!-- /.top_plan_imgbox -->
-                <h3 class="top_plan_ttl" data-aos="fade-up" data-aos-duration="1600">
+                <h3 class="top_plan_ttl">
                   朝食付きプラン、日本近海で取れた<br>
                   のどぐろを朝食として・・・
                 </h3><!-- /.plan_ttl -->
-                <p class="top_plan_txt" data-aos="fade-up" data-aos-duration="1700">
+                <p class="top_plan_txt">
                   最高級と称されるのどぐろ、正式には「アカ
                   ムツ」と呼ばれている魚、味は独特の上品な味わ
                   いで、焼いても煮ても美味
                 </p><!-- /.plan_txt -->
               </li><!-- /.plan_item -->
               <li class="top_plan_item">
-                <div class="top_plan_imgbox" data-aos="fade-up">
+                <div class="top_plan_imgbox">
                   <img src="img/section-recommended/recommended02.jpg" alt="期間限定プラン" class="top_plan_img">
                 </div><!-- /.top_plan_imgbox -->
-                <h3 class="top_plan_ttl" data-aos="fade-up" data-aos-duration="1600">
+                <h3 class="top_plan_ttl">
                   【期間限定】熱海蟹をたっぷりと<br>
                   愉しむプラン。
                 </h3><!-- /.plan_ttl -->
-                <p class="top_plan_txt" data-aos="fade-up" data-aos-duration="1700">
+                <p class="top_plan_txt">
                   温海で水揚げされた蟹は「温海蟹」
                   として知られ、嗜好品として愛されて
                   きました。この宿泊プランでは存分に
                 </p><!-- /.plan_txt -->
               </li><!-- /.plan_item -->
               <li class="top_plan_item">
-                <div class="top_plan_imgbox" data-aos="fade-up">
+                <div class="top_plan_imgbox">
                   <img src="img/section-recommended/recommended03.jpg" alt="贅沢美味懐石プラン" class="top_plan_img">
                 </div><!-- /.top_plan_imgbox -->
-                <h3 class="top_plan_ttl" data-aos="fade-up" data-aos-duration="1600">
+                <h3 class="top_plan_ttl">
                   【平日限定】贅沢美味懐石プラン。<br>
                   海辺の四季旬彩プラン。
                 </h3><!-- /.plan_ttl -->
-                <p class="top_plan_txt" data-aos="fade-up" data-aos-duration="1700">
+                <p class="top_plan_txt">
                   熱海近海で取れた魚を鮮度そのままに舟盛りに
                   してご提供。生きた味をお楽しみください。
                 </p><!-- /.plan_txt -->
@@ -310,7 +309,7 @@
             </ul><!-- /.news_list -->
 
             <div class="top_news_content">
-              <ul class="top_news_contentlist active" data-aos="fade-up">
+              <ul class="top_news_contentlist active">
 
                 <li class="top_news_contentitem">
                   <a href="#" class="news_link">
@@ -519,9 +518,9 @@
           <div class="section_inner">
             <div class="section_ttl">アクセス</div><!-- /.section_ttl -->
             <div class="top_access_flex">
-              <div class="top_access_img" data-aos="fade-up"></div><!-- /.access_img -->
+              <div class="top_access_img"></div><!-- /.access_img -->
               <div class="top_access_box">
-                <p class="top_access_txt" data-aos="fade-up" data-aos-duration="1700">
+                <p class="top_access_txt">
                   住所<br>
                   〒000-0000<br>
                   山形県鶴岡市XXXXXXXXXXXXXX<br>
@@ -534,7 +533,7 @@
                 </p><!-- /.top_access_txt -->
               </div><!-- /.access_box -->
             </div><!-- /.flex -->
-            <div class="top_access_flex flex_center" data-aos="fade-up" data-aos-duration="1700">
+            <div class="top_access_flex flex_center">
               <iframe class="top_access_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49867.71957555606!2d139.56345501383365!3d38.63203510497761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8c6dbd6c03ae15%3A0x10bc5da99bc816ef!2z44CSOTk5LTcyMDUg5bGx5b2i55yM6ba05bKh5biC5rip5rW3!5e0!3m2!1sja!2sjp!4v1606280920583!5m2!1sja!2sjp" width="792" height="592" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
             </div><!-- /.flex -->
