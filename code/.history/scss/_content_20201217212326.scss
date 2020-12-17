@@ -204,7 +204,8 @@ fv
 
         @include SP {
             @include rem(50);
-
+            right: 50%;
+            transform: translateX(-50%);
         }
     }
 
@@ -1033,8 +1034,6 @@ footer
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
-    
 
 }
 

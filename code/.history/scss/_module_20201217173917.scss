@@ -221,12 +221,6 @@ nav
         @include rem(14);
     }
 
-    @include SP {
-        width: 140px;
-        padding: 10px 0;
-        @include rem(14);
-    }
-
 
 
 }

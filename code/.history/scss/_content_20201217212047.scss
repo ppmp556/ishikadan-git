@@ -201,11 +201,6 @@ fv
         @include tab {
             @include rem(25);
         }
-
-        @include SP {
-            @include rem(50);
-
-        }
     }
 
 }
@@ -922,7 +917,6 @@ footer
 
         @include SP {
             @include rem(14);
-            text-align: center;
         }
 
     }
@@ -1033,8 +1027,6 @@ footer
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
-    
 
 }
 

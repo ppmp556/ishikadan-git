@@ -16,7 +16,10 @@ nav
         color: $cWhite;
         align-items: center;
 
+  
     }
+
+
 
 
 
@@ -28,14 +31,13 @@ nav
             display: flex;
             flex-direction: column;
 
-            /* height: 100%;
-            width: 100%; */
-            background-color: red;
-
+            
             &.clicked {
                 right: -5vw;
                 transition: .6s;
-
+                background-color: red;
+                width: 100%;
+                height: 100vh;
             }
 
         }
@@ -218,12 +220,6 @@ nav
     @include tab {
         width: 120px;
         padding: 5px 0;
-        @include rem(14);
-    }
-
-    @include SP {
-        width: 140px;
-        padding: 10px 0;
         @include rem(14);
     }
 

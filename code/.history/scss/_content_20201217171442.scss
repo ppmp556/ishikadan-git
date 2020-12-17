@@ -20,10 +20,10 @@ header
     transition: .5s;
 
 
-   /*  @include tab {
+    @include tab {
         overflow: hidden;
     }
- */
+
 
 
     &_ttl {
@@ -125,11 +125,6 @@ header
         .site_link {
             color: $cWhite;
         }
-
-
-        .nav_line {
-            background-color: $cBlack;
-        }
     }
 
 
@@ -201,11 +196,6 @@ fv
         @include tab {
             @include rem(25);
         }
-
-        @include SP {
-            @include rem(50);
-
-        }
     }
 
 }
@@ -229,13 +219,7 @@ top_about
         max-width: 1180px;
         writing-mode: vertical-rl; //縦書き
         padding: 149px 0 54px;
-
-        @include SP {
-            padding: 100px 0 54px;
-        }
     }
-
-
 
     .section_ttl {
         @include rem(28);
@@ -247,11 +231,6 @@ top_about
 
         @include tab {
             @include rem(25);
-        }
-
-        @include SP {
-            margin: 0 20px 0 0;
-            @include rem(22);
         }
     }
 
@@ -268,12 +247,6 @@ top_about
             @include rem(14);
             margin-right: 50px;
         }
-
-        @include SP {
-            @include rem(12);
-            margin-right: 20px;
-        }
-
     }
 
     &_txt {
@@ -299,19 +272,6 @@ top_about
     
             }
         }
-
-        @include SP {
-            margin-left: 10px;
-            @include rem(14);
-            line-height: 1.5;
-
-            &:last-child {
-                margin-top: 300px;
-                @include rem(14);
-
-
-            }
-        }
     }
 }
 
@@ -331,10 +291,6 @@ top_guide
 
 .top_guide {
     padding: 106px 0 78px;
-
-    @include SP {
-        padding: 78px 0 78px;
-    }
 
     .section_inner {
         max-width: initial;
@@ -357,12 +313,6 @@ top_guide
             margin-top: 0;
             margin-bottom: 50px;
         }
-
-        @include SP {
-            flex-wrap: wrap;
-            margin-top: 0;
-            margin-bottom: 50px;
-        }
     }
 
     &_imgbox{
@@ -372,12 +322,6 @@ top_guide
         margin-right: 10%;
 
         @include tab {
-            width: 100%;
-            height: 50vw;
-            margin-right: 0;
-        }
-
-        @include SP {
             width: 100%;
             height: 50vw;
             margin-right: 0;
@@ -396,10 +340,6 @@ top_guide
             margin-left: 10%;
 
             @include tab {
-                margin-left: 0;
-            }
-
-            @include SP {
                 margin-left: 0;
             }
 
@@ -429,11 +369,6 @@ top_guide
             width: 100%;
             padding: 0 20px;
         }
-
-        @include SP {
-            width: 100%;
-            padding: 0 20px;
-        }
     }
 
     &_ttl {
@@ -443,12 +378,7 @@ top_guide
         @include tab {
             @include rem(25);
         }
-
-        @include SP {
-            @include rem(24);
-        }
     }
-
     &_txt {
         @include rem(16);
         margin-top: 75px;
@@ -458,11 +388,6 @@ top_guide
             @include rem(20);
             margin-top: 40px;
         }
-
-        @include SP {
-            @include rem(16);
-            margin-top: 20px;
-        }
     }
 
     .site_link {
@@ -470,10 +395,6 @@ top_guide
 
         @include tab {
             margin: 50px auto 0;
-        }
-
-        @include SP {
-            margin: 25px auto 0;
         }
     }
 }
@@ -495,10 +416,6 @@ top-plan
     display: block;
 
     @include tab {
-        height: 100%;
-    }
-
-    @include SP {
         height: 100%;
     }
 
@@ -532,10 +449,6 @@ top-plan
         @include tab {
             flex-direction: column;
         }
-
-        @include SP {
-            flex-direction: column;
-        }
     }
 
     &_item {
@@ -547,27 +460,16 @@ top-plan
             padding: 0 20px;
         }
 
-        @include SP {
-            width: 100%;
-            margin-bottom: 40px;
-            padding: 0 20px;
-        }
-
     }
 
     &_imgbox {
         width: 331px;
         height: 209px;
         overflow: hidden;
-
         @include tab {
             width: 100%;
             height: 350px;
-        }
-
-        @include SP {
-            width: 100%;
-            height: 250px;
+            background-position-y: 10%;
         }
 
     }
@@ -595,6 +497,8 @@ top-plan
         }
     }
 
+ 
+
 }
 
 
@@ -616,11 +520,6 @@ news
 
         @include tab {
             height: 1091px;
-        }
-
-        @include SP {
-            height: 1091px;
-            padding: 20px 9;
         }
     }
 
@@ -670,10 +569,6 @@ news
             margin: 10px auto;
         }
 
-        @include SP {
-            @include rem(14);
-        }
-
     }
 
 
@@ -690,11 +585,6 @@ news
             width: 100%;
             overflow: hidden;
             // transform: translateX(-100%);
-
-            @include SP {
-                width: 90%;
-                margin: 0 auto;
-            }
         }
 
     }
@@ -709,10 +599,6 @@ news
         width: 103px;
         height: 100%;
         margin-right: 30px;
-
-        @include SP {
-            margin-right: 15px;
-        }
     }
 
     &_img {
@@ -721,10 +607,6 @@ news
 
     &_txtbox {
         width: 388px;
-
-        @include SP {
-            width: 250px;
-        }
     }
 
 
@@ -732,18 +614,10 @@ news
     &_date {
         @include rem(14);
 
-        @include SP {
-            margin-bottom: 7px;
-        }
-
     }
 
     &_txt {
         @include rem(16);
-
-        @include SP {
-            @include rem(10);
-        }
     }
 
 
@@ -804,15 +678,13 @@ access
         @include tab {
             flex-wrap: wrap;
         }
-
-        @include SP {
-            flex-wrap: wrap;
-        }
     }
 
     &_img {
         background: url(../img/common/access.jpg) center no-repeat;
+        // width: 656px;
         height: 370px;
+        // margin-right: 83px;
         width: 75%;
         background-size: cover;
         display: block;
@@ -822,36 +694,16 @@ access
             height: 500px;
             margin-bottom: 50px;
         }
-
-        @include SP {
-            width: 100%;
-            height: 400px;
-            margin-bottom: 50px;
-        }
     }
 
     &_box {
         margin-left: 83px;
-
-        @include SP {
-            margin-left: initial;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
     }
 
     &_txt {
         @include rem(16);
         line-height: 2;
         width: 180%;
-
-        @include SP {
-            @include rem(14);
-            width: 100%;
-            list-style: 2.2;
-        }
-
-
     }
 }
 
@@ -920,11 +772,6 @@ footer
         display: flex;
         justify-content: center;
 
-        @include SP {
-            @include rem(14);
-            text-align: center;
-        }
-
     }
 
     &_access_txt {
@@ -942,8 +789,6 @@ footer
     &_txt {
         @include rem(12);
         color: $cWhite;
-
-
     }
 
 
@@ -1033,8 +878,6 @@ footer
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
-    
 
 }
 

@@ -201,11 +201,6 @@ fv
         @include tab {
             @include rem(25);
         }
-
-        @include SP {
-            @include rem(50);
-
-        }
     }
 
 }
@@ -834,9 +829,8 @@ access
         margin-left: 83px;
 
         @include SP {
-            margin-left: initial;
+            margin-left: 0;
             margin: 0 auto;
-            padding: 0 20px;
         }
     }
 
@@ -847,8 +841,6 @@ access
 
         @include SP {
             @include rem(14);
-            width: 100%;
-            list-style: 2.2;
         }
 
 
@@ -920,11 +912,6 @@ footer
         display: flex;
         justify-content: center;
 
-        @include SP {
-            @include rem(14);
-            text-align: center;
-        }
-
     }
 
     &_access_txt {
@@ -942,8 +929,6 @@ footer
     &_txt {
         @include rem(12);
         color: $cWhite;
-
-
     }
 
 
@@ -1033,8 +1018,6 @@ footer
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
-    
 
 }
 
