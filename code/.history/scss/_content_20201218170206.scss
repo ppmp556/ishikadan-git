@@ -1143,7 +1143,7 @@ underコンテンツ
 
         @include SP {
             width: 90%;
-            height: 73vw;
+            height: 85vw;
             margin-top: -10%;
             margin-left: 10%;
             padding: 10px;
@@ -1202,7 +1202,7 @@ underコンテンツ
         @include SP {
             @include rem(11);
             margin-left: 10%;
-            margin-top: 5%;
+            margin-top: 10%;
 
             &.__txt {
                 @include rem(9);

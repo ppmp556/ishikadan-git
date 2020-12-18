@@ -1132,7 +1132,6 @@ underコンテンツ
         @include tab {
             // width: 650px;
             width: 100%;
-            // height: 85vw;
             margin-top: -50px;
             margin-left: 80px;
 
@@ -1142,18 +1141,12 @@ underコンテンツ
         }
 
         @include SP {
-            width: 90%;
-            height: 73vw;
+            width: 100%;
             margin-top: -10%;
             margin-left: 10%;
-            padding: 10px;
 
             &.__mg {
-                margin-right: 10%;
-            }
-
-            .__txtmg {
-                margin-left: 10%;
+                margin-right: 20%;
             }
         }
 
@@ -1175,9 +1168,7 @@ underコンテンツ
         }
 
         @include SP {
-            @include rem(20);
-            margin-left: 10%;
-            margin-top: 20%;
+            margin-left: 5%;
         }
     }
 
@@ -1196,17 +1187,6 @@ underコンテンツ
             margin-left: 15%;
             margin-top: 40px;
 
-
-        }
-
-        @include SP {
-            @include rem(11);
-            margin-left: 10%;
-            margin-top: 5%;
-
-            &.__txt {
-                @include rem(9);
-            }
 
         }
     }

@@ -1066,6 +1066,14 @@ top-plan
   margin: 0 auto 20px;
 }
 
+@media screen and (max-width: 480px) {
+  .top_plan .top_section_ttl {
+    font-size: 30px;
+    /*IE9以前に対応する*/
+    font-size: 1.875rem;
+  }
+}
+
 .top_plan_content {
   margin-top: 66px;
   display: -webkit-box;
@@ -1206,6 +1214,14 @@ news
   height: 40px;
   display: block;
   margin: 0 auto 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .top_news .section_ttl {
+    font-size: 30px;
+    /*IE9以前に対応する*/
+    font-size: 1.875rem;
+  }
 }
 
 .top_news_content {
@@ -1715,6 +1731,14 @@ underコンテンツ
   font-size: 1rem;
 }
 
+@media screen and (max-width: 480px) {
+  .intro_txt {
+    font-size: 14px;
+    /*IE9以前に対応する*/
+    font-size: 0.875rem;
+  }
+}
+
 .under_content {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1731,10 +1755,40 @@ underコンテンツ
           flex-direction: row-reverse;
 }
 
+@media screen and (max-width: 1279px) and (min-width: 764px) {
+  .under_content {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .under_content {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+}
+
 .under_imgbox {
   width: 525px;
   height: 300px;
   margin-top: -57px;
+}
+
+@media screen and (max-width: 1279px) and (min-width: 764px) {
+  .under_imgbox {
+    width: 80%;
+    height: 40vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .under_imgbox {
+    width: 85%;
+    height: 200px;
+  }
 }
 
 .under_txtbox {
@@ -1754,12 +1808,59 @@ underコンテンツ
   margin-left: 60px;
 }
 
+@media screen and (max-width: 1279px) and (min-width: 764px) {
+  .under_txtbox {
+    width: 100%;
+    margin-top: -50px;
+    margin-left: 80px;
+  }
+  .under_txtbox.__mg {
+    margin-right: 80px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .under_txtbox {
+    width: 90%;
+    height: 73vw;
+    margin-top: -10%;
+    margin-left: 10%;
+    padding: 10px;
+  }
+  .under_txtbox.__mg {
+    margin-right: 10%;
+  }
+  .under_txtbox .__txtmg {
+    margin-left: 10%;
+  }
+}
+
 .under_ttl {
   margin-top: 60px;
   margin-left: 238px;
   font-size: 24px;
   /*IE9以前に対応する*/
   font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1279px) and (min-width: 764px) {
+  .under_ttl {
+    font-size: 28px;
+    /*IE9以前に対応する*/
+    font-size: 1.75rem;
+    margin-left: 15%;
+    margin-top: 95px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .under_ttl {
+    font-size: 20px;
+    /*IE9以前に対応する*/
+    font-size: 1.25rem;
+    margin-left: 10%;
+    margin-top: 20%;
+  }
 }
 
 .under_txt {
@@ -1774,6 +1875,31 @@ underコンテンツ
   font-size: 14px;
   /*IE9以前に対応する*/
   font-size: 0.875rem;
+}
+
+@media screen and (max-width: 1279px) and (min-width: 764px) {
+  .under_txt {
+    font-size: 18px;
+    /*IE9以前に対応する*/
+    font-size: 1.125rem;
+    margin-left: 15%;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .under_txt {
+    font-size: 11px;
+    /*IE9以前に対応する*/
+    font-size: 0.6875rem;
+    margin-left: 10%;
+    margin-top: 5%;
+  }
+  .under_txt.__txt {
+    font-size: 9px;
+    /*IE9以前に対応する*/
+    font-size: 0.5625rem;
+  }
 }
 
 .onsen_table_wrap {
@@ -1799,6 +1925,12 @@ underコンテンツ
   max-width: 880px;
   margin-bottom: 74px;
   margin-left: 150px;
+}
+
+@media screen and (max-width: 1279px) and (min-width: 764px) {
+  .onsen_table {
+    margin-left: 0;
+  }
 }
 
 .onsen_table .flame {
