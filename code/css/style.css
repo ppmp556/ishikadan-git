@@ -108,7 +108,6 @@ nav
 *****************************************:*/
 .nav {
   position: relative;
-  margin-left: 120px;
 }
 
 .nav_list {
@@ -130,10 +129,15 @@ nav
           align-items: center;
 }
 
-@media screen and (max-width: 1279px) and (min-width: 764px) {
+@media screen and (max-width: 769px) and (min-width: 480px) {
   .nav_list {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     position: absolute;
-    right: -1000px;
+    top: 35px;
+    right: -2000px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -143,14 +147,59 @@ nav
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
-    /* height: 100%;
-            width: 100%; */
-    background-color: red;
+    height: 100vh;
+    background-color: #ffffff;
   }
   .nav_list.clicked {
-    right: -5vw;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
     -webkit-transition: .6s;
     transition: .6s;
+  }
+  .nav_list.clicked .nav_item {
+    color: #000000;
+    margin: 20px 0;
+  }
+  .nav_list.clicked .nav_item:hover {
+    border-bottom: 1px solid #000000;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav_list {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: absolute;
+    top: 35px;
+    right: -2000px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100vh;
+    background-color: #ffffff;
+  }
+  .nav_list.clicked {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    -webkit-transition: .6s;
+    transition: .6s;
+  }
+  .nav_list.clicked .nav_item {
+    color: #000000;
+    margin: 20px 0;
+  }
+  .nav_list.clicked .nav_item:hover {
+    border-bottom: 1px solid #000000;
   }
 }
 
@@ -158,7 +207,64 @@ nav
   display: none;
 }
 
-@media screen and (max-width: 1279px) and (min-width: 764px) {
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .nav_ham {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: 25px;
+    height: 25px;
+    z-index: 100;
+  }
+  .nav_ham.clicked {
+    right: 20px;
+  }
+  .nav_hamspan {
+    font-size: 1.1rem;
+    position: absolute;
+    top: -20px;
+    left: -25px;
+  }
+  .nav_line {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+  }
+  .nav_line:nth-child(1) {
+    top: 0px;
+  }
+  .nav_line:nth-child(2) {
+    top: 8px;
+  }
+  .nav_line:nth-child(3) {
+    top: 16px;
+  }
+  .nav_line.clicked:nth-child(1) {
+    -webkit-transform: translateY(12px) rotate(-315deg);
+            transform: translateY(12px) rotate(-315deg);
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+  .nav_line.clicked:nth-child(2) {
+    left: 0;
+    -webkit-transition: .9s;
+    transition: .9s;
+    opacity: 0;
+  }
+  .nav_line.clicked:nth-child(3) {
+    -webkit-transform: translateY(-4px) rotate(315deg);
+            transform: translateY(-4px) rotate(315deg);
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+}
+
+@media screen and (max-width: 480px) {
   .nav_ham {
     display: block;
     cursor: pointer;
@@ -228,6 +334,15 @@ nav
   margin: 0;
 }
 
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .nav_item {
+    margin-right: 0;
+    font-size: 26px;
+    /*IE9以前に対応する*/
+    font-size: 1.625rem;
+  }
+}
+
 .nav_link {
   position: relative;
   display: block;
@@ -277,11 +392,19 @@ nav
           transform: translateY(-50%);
 }
 
-@media screen and (max-width: 1279px) and (min-width: 764px) {
+@media screen and (max-width: 769px) and (min-width: 480px) {
   .site_btn.__headbtn::before {
     width: 15px;
     height: 15px;
     left: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .site_btn.__headbtn::before {
+    width: 10px;
+    height: 10px;
+    left: 15px;
   }
 }
 
@@ -305,7 +428,7 @@ nav
   position: relative;
 }
 
-@media screen and (max-width: 1279px) and (min-width: 764px) {
+@media screen and (max-width: 769px) and (min-width: 480px) {
   .site_link {
     width: 120px;
     padding: 5px 0;
@@ -317,11 +440,13 @@ nav
 
 @media screen and (max-width: 480px) {
   .site_link {
-    width: 140px;
+    width: 80px;
     padding: 10px 0;
-    font-size: 14px;
+    line-height: 1;
+    margin-left: 10px;
+    font-size: 10px;
     /*IE9以前に対応する*/
-    font-size: 0.875rem;
+    font-size: 0.625rem;
   }
 }
 
@@ -386,6 +511,21 @@ nav
   line-height: 1;
 }
 
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .calendar {
+    width: 70%;
+    height: 450px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .calendar {
+    width: 80%;
+    height: 450px;
+    padding: 25px 35px 80px;
+  }
+}
+
 .calendar_ttl {
   padding-bottom: 29.5px;
   font-size: 20px;
@@ -394,6 +534,25 @@ nav
   text-align: center;
   line-height: 1.7;
   border-bottom: 1px solid #707070;
+}
+
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .calendar_ttl {
+    font-size: 18px;
+    /*IE9以前に対応する*/
+    font-size: 1.125rem;
+    padding-bottom: 20px;
+    line-height: 1.4;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .calendar_ttl {
+    font-size: 14px;
+    /*IE9以前に対応する*/
+    font-size: 0.875rem;
+    padding-bottom: 14px;
+  }
 }
 
 .calendar_close {
@@ -417,6 +576,18 @@ nav
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .calendar_inner {
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .calendar_inner {
+    margin-top: 15px;
+  }
 }
 
 .calendar_form {
@@ -443,6 +614,32 @@ nav
   font-size: 0.875rem;
 }
 
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .calendar_select {
+    font-size: 12px;
+    /*IE9以前に対応する*/
+    font-size: 0.75rem;
+  }
+  .calendar_select option {
+    font-size: 10px;
+    /*IE9以前に対応する*/
+    font-size: 0.625rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .calendar_select {
+    font-size: 12px;
+    /*IE9以前に対応する*/
+    font-size: 0.75rem;
+  }
+  .calendar_select option {
+    font-size: 10px;
+    /*IE9以前に対応する*/
+    font-size: 0.625rem;
+  }
+}
+
 .calendar.open {
   display: block;
 }
@@ -453,6 +650,24 @@ nav
   font-size: 1rem;
   line-height: 1.68;
   margin-bottom: 14px;
+}
+
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .form_ttl {
+    font-size: 12px;
+    /*IE9以前に対応する*/
+    font-size: 0.75rem;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .form_ttl {
+    font-size: 12px;
+    /*IE9以前に対応する*/
+    font-size: 0.75rem;
+    margin-bottom: 8px;
+  }
 }
 
 .form_box {
@@ -471,6 +686,18 @@ nav
   border: 1px solid #707070;
   cursor: pointer;
   display: block;
+}
+
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .contact_link {
+    margin: 20px auto 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact_link {
+    margin: 15px auto 0;
+  }
 }
 
 /****************************************:
@@ -502,10 +729,18 @@ header
   line-height: 54px;
   -webkit-transition: .5s;
   transition: .5s;
-  /*  @include tab {
-        overflow: hidden;
-    }
- */
+}
+
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .header {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    padding: 10px;
+  }
 }
 
 .header_ttl {
@@ -513,7 +748,8 @@ header
   position: relative;
   letter-spacing: .5em;
   margin-left: 40px;
-  padding: 0 20px;
+  margin-right: 120px;
+  padding-left: 20px;
 }
 
 .header_ttl::before {
@@ -531,7 +767,7 @@ header
           transform: translateY(-50%);
 }
 
-@media screen and (max-width: 1279px) and (min-width: 764px) {
+@media screen and (max-width: 769px) and (min-width: 480px) {
   .header_ttl {
     margin-left: 25px;
   }
@@ -551,11 +787,19 @@ header
   display: block;
 }
 
-@media screen and (max-width: 1279px) and (min-width: 764px) {
+@media screen and (max-width: 769px) and (min-width: 480px) {
   .header_link {
     font-size: 14px;
     /*IE9以前に対応する*/
     font-size: 0.875rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header_link {
+    font-size: 12px;
+    /*IE9以前に対応する*/
+    font-size: 0.75rem;
   }
 }
 
@@ -569,9 +813,17 @@ header
   font-size: 1rem;
 }
 
-@media screen and (max-width: 1279px) and (min-width: 764px) {
+@media screen and (max-width: 769px) and (min-width: 480px) {
   .header_btnbox {
-    right: 20vw;
+    right: 15vw;
+    margin: 0 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header_btnbox {
+    right: 15vw;
+    margin: 0 20px;
   }
 }
 
@@ -603,6 +855,14 @@ header
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .header.fix .header_ttl:before {
+    width: 20px;
+    height: 20px;
+    left: -15px;
+  }
 }
 
 .header.fix .site_link {
@@ -673,19 +933,20 @@ fv
           transform: translateY(-50%);
 }
 
-@media screen and (max-width: 1279px) and (min-width: 764px) {
+@media screen and (max-width: 769px) and (min-width: 480px) {
   .top_mv_copy {
-    font-size: 25px;
+    font-size: 20px;
     /*IE9以前に対応する*/
-    font-size: 1.5625rem;
+    font-size: 1.25rem;
+    letter-spacing: .15em;
   }
 }
 
 @media screen and (max-width: 480px) {
   .top_mv_copy {
-    font-size: 50px;
+    font-size: 16px;
     /*IE9以前に対応する*/
-    font-size: 3.125rem;
+    font-size: 1rem;
   }
 }
 
@@ -708,6 +969,12 @@ top_about
   padding: 149px 0 54px;
 }
 
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .top_about .section_inner {
+    padding: 120px 0 54px;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .top_about .section_inner {
     padding: 100px 0 54px;
@@ -725,11 +992,12 @@ top_about
   margin: 0 101px 0 0;
 }
 
-@media screen and (max-width: 1279px) and (min-width: 764px) {
+@media screen and (max-width: 769px) and (min-width: 480px) {
   .top_about .section_ttl {
     font-size: 25px;
     /*IE9以前に対応する*/
     font-size: 1.5625rem;
+    margin: 0 25% 0 0;
   }
 }
 
@@ -754,12 +1022,12 @@ top_about
   margin-left: auto;
 }
 
-@media screen and (max-width: 1279px) and (min-width: 764px) {
+@media screen and (max-width: 769px) and (min-width: 480px) {
   .top_about_txtbox {
     font-size: 14px;
     /*IE9以前に対応する*/
     font-size: 0.875rem;
-    margin-right: 50px;
+    margin-right: 10%;
   }
 }
 
@@ -785,10 +1053,11 @@ top_about
   font-size: 1.375rem;
 }
 
-@media screen and (max-width: 1279px) and (min-width: 764px) {
+@media screen and (max-width: 769px) and (min-width: 480px) {
   .top_about_txt {
-    margin-left: 50px;
+    margin-left: 10%;
     letter-spacing: .1em;
+    line-height: 4vw;
   }
   .top_about_txt:last-child {
     margin-top: 230px;
@@ -807,7 +1076,7 @@ top_about
     line-height: 1.5;
   }
   .top_about_txt:last-child {
-    margin-top: 300px;
+    margin-top: 68%;
     font-size: 14px;
     /*IE9以前に対応する*/
     font-size: 0.875rem;
@@ -848,6 +1117,12 @@ top_guide
       -ms-flex-align: start;
           align-items: flex-start;
   margin-top: 122px;
+  /*        @include tab-SP {
+            flex-wrap: wrap;
+            margin-top: 0;
+            margin-bottom: 50px;
+
+        } */
 }
 
 .top_guide_box:nth-child(2n) {
@@ -858,7 +1133,7 @@ top_guide
           flex-direction: row-reverse;
 }
 
-@media screen and (max-width: 1279px) and (min-width: 764px) {
+@media screen and (max-width: 769px) and (min-width: 480px) {
   .top_guide_box {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -885,7 +1160,7 @@ top_guide
   margin-right: 10%;
 }
 
-@media screen and (max-width: 1279px) and (min-width: 764px) {
+@media screen and (max-width: 769px) and (min-width: 480px) {
   .top_guide_imgbox {
     width: 100%;
     height: 50vw;
@@ -913,7 +1188,7 @@ top_guide
   margin-left: 10%;
 }
 
-@media screen and (max-width: 1279px) and (min-width: 764px) {
+@media screen and (max-width: 769px) and (min-width: 480px) {
   .top_guide_imgbox.menu_img {
     margin-left: 0;
   }
@@ -941,7 +1216,7 @@ top_guide
   margin-right: 0;
 }
 
-@media screen and (max-width: 1279px) and (min-width: 764px) {
+@media screen and (max-width: 769px) and (min-width: 480px) {
   .top_guide_txtbox {
     width: 100%;
     padding: 0 20px;
@@ -962,7 +1237,7 @@ top_guide
   line-height: 1.72;
 }
 
-@media screen and (max-width: 1279px) and (min-width: 764px) {
+@media screen and (max-width: 769px) and (min-width: 480px) {
   .top_guide_ttl {
     font-size: 25px;
     /*IE9以前に対応する*/
@@ -986,7 +1261,7 @@ top_guide
   line-height: 2;
 }
 
-@media screen and (max-width: 1279px) and (min-width: 764px) {
+@media screen and (max-width: 769px) and (min-width: 480px) {
   .top_guide_txt {
     font-size: 20px;
     /*IE9以前に対応する*/
@@ -1008,7 +1283,7 @@ top_guide
   margin-top: 75px;
 }
 
-@media screen and (max-width: 1279px) and (min-width: 764px) {
+@media screen and (max-width: 769px) and (min-width: 480px) {
   .top_guide .site_link {
     margin: 50px auto 0;
   }
@@ -1032,7 +1307,7 @@ top-plan
   display: block;
 }
 
-@media screen and (max-width: 1279px) and (min-width: 764px) {
+@media screen and (max-width: 769px) and (min-width: 480px) {
   .top_plan {
     height: 100%;
   }
@@ -1086,7 +1361,7 @@ top-plan
           justify-content: space-between;
 }
 
-@media screen and (max-width: 1279px) and (min-width: 764px) {
+@media screen and (max-width: 769px) and (min-width: 480px) {
   .top_plan_content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1110,7 +1385,7 @@ top-plan
   width: 340px;
 }
 
-@media screen and (max-width: 1279px) and (min-width: 764px) {
+@media screen and (max-width: 769px) and (min-width: 480px) {
   .top_plan_item {
     width: 100%;
     margin-bottom: 50px;
@@ -1132,7 +1407,7 @@ top-plan
   overflow: hidden;
 }
 
-@media screen and (max-width: 1279px) and (min-width: 764px) {
+@media screen and (max-width: 769px) and (min-width: 480px) {
   .top_plan_imgbox {
     width: 100%;
     height: 350px;
@@ -1167,7 +1442,7 @@ top-plan
   letter-spacing: 0;
 }
 
-@media screen and (max-width: 1279px) and (min-width: 764px) {
+@media screen and (max-width: 769px) and (min-width: 480px) {
   .top_plan_txt {
     font-size: 18px;
     /*IE9以前に対応する*/
@@ -1187,7 +1462,7 @@ news
   height: 757px;
 }
 
-@media screen and (max-width: 1279px) and (min-width: 764px) {
+@media screen and (max-width: 769px) and (min-width: 480px) {
   .top_news .section_inner {
     height: 1091px;
   }
@@ -1267,7 +1542,7 @@ news
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 1279px) and (min-width: 764px) {
+@media screen and (max-width: 769px) and (min-width: 480px) {
   .top_news_contentitem {
     margin: 10px auto;
   }
@@ -1459,7 +1734,7 @@ access
   margin-bottom: 0;
 }
 
-@media screen and (max-width: 1279px) and (min-width: 764px) {
+@media screen and (max-width: 769px) and (min-width: 480px) {
   .top_access_flex {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -1483,11 +1758,12 @@ access
   display: block;
 }
 
-@media screen and (max-width: 1279px) and (min-width: 764px) {
+@media screen and (max-width: 769px) and (min-width: 480px) {
   .top_access_img {
-    width: 100%;
+    width: 90%;
     height: 500px;
-    margin-bottom: 50px;
+    background-size: contain;
+    margin: 0 auto 50px;
   }
 }
 
@@ -1511,6 +1787,19 @@ access
   }
 }
 
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .top_access_map {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .top_access_map {
+    padding: 0 20px;
+    height: 300px;
+  }
+}
+
 .top_access_txt {
   font-size: 16px;
   /*IE9以前に対応する*/
@@ -1524,7 +1813,7 @@ access
     font-size: 14px;
     /*IE9以前に対応する*/
     font-size: 0.875rem;
-    width: 100%;
+    width: initial;
     list-style: 2.2;
   }
 }
@@ -1639,6 +1928,10 @@ footer
   background: #ffffff;
 }
 
+.header.color_head .nav_line {
+  background: #000000;
+}
+
 .header .color_head {
   color: #000000;
 }
@@ -1731,6 +2024,14 @@ underコンテンツ
   font-size: 1rem;
 }
 
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .intro_txt {
+    font-size: 15px;
+    /*IE9以前に対応する*/
+    font-size: 0.9375rem;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .intro_txt {
     font-size: 14px;
@@ -1755,7 +2056,7 @@ underコンテンツ
           flex-direction: row-reverse;
 }
 
-@media screen and (max-width: 1279px) and (min-width: 764px) {
+@media screen and (max-width: 769px) and (min-width: 480px) {
   .under_content {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -1777,7 +2078,7 @@ underコンテンツ
   margin-top: -57px;
 }
 
-@media screen and (max-width: 1279px) and (min-width: 764px) {
+@media screen and (max-width: 769px) and (min-width: 480px) {
   .under_imgbox {
     width: 80%;
     height: 40vw;
@@ -1808,14 +2109,16 @@ underコンテンツ
   margin-left: 60px;
 }
 
-@media screen and (max-width: 1279px) and (min-width: 764px) {
+@media screen and (max-width: 769px) and (min-width: 480px) {
   .under_txtbox {
+    width: 450px;
     width: 100%;
     margin-top: -50px;
-    margin-left: 80px;
+    margin-left: 10%;
+    padding: 10px;
   }
   .under_txtbox.__mg {
-    margin-right: 80px;
+    margin-right: 10%;
   }
 }
 
@@ -1843,11 +2146,11 @@ underコンテンツ
   font-size: 1.5rem;
 }
 
-@media screen and (max-width: 1279px) and (min-width: 764px) {
+@media screen and (max-width: 769px) and (min-width: 480px) {
   .under_ttl {
-    font-size: 28px;
+    font-size: 22px;
     /*IE9以前に対応する*/
-    font-size: 1.75rem;
+    font-size: 1.375rem;
     margin-left: 15%;
     margin-top: 95px;
   }
@@ -1855,9 +2158,9 @@ underコンテンツ
 
 @media screen and (max-width: 480px) {
   .under_ttl {
-    font-size: 20px;
+    font-size: 16px;
     /*IE9以前に対応する*/
-    font-size: 1.25rem;
+    font-size: 1rem;
     margin-left: 10%;
     margin-top: 20%;
   }
@@ -1877,23 +2180,25 @@ underコンテンツ
   font-size: 0.875rem;
 }
 
-@media screen and (max-width: 1279px) and (min-width: 764px) {
+@media screen and (max-width: 769px) and (min-width: 480px) {
   .under_txt {
-    font-size: 18px;
+    font-size: 16px;
     /*IE9以前に対応する*/
-    font-size: 1.125rem;
+    font-size: 1rem;
     margin-left: 15%;
     margin-top: 40px;
+    line-height: 1.8;
   }
 }
 
 @media screen and (max-width: 480px) {
   .under_txt {
-    font-size: 11px;
+    font-size: 12px;
     /*IE9以前に対応する*/
-    font-size: 0.6875rem;
+    font-size: 0.75rem;
     margin-left: 10%;
     margin-top: 5%;
+    line-height: 1.8;
   }
   .under_txt.__txt {
     font-size: 9px;
@@ -1923,13 +2228,21 @@ underコンテンツ
   font-size: 0.9375rem;
   line-height: 2.13;
   max-width: 880px;
-  margin-bottom: 74px;
-  margin-left: 150px;
+  margin: 0 auto 74px;
 }
 
-@media screen and (max-width: 1279px) and (min-width: 764px) {
+@media screen and (max-width: 769px) and (min-width: 480px) {
   .onsen_table {
     margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .onsen_table {
+    margin-left: 0;
+    font-size: 12px;
+    /*IE9以前に対応する*/
+    font-size: 0.75rem;
   }
 }
 
@@ -1944,6 +2257,18 @@ underコンテンツ
   display: inline-block;
   width: 100%;
   line-height: 2.13;
+}
+
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .onsen_table .head {
+    margin-right: 100px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .onsen_table .head {
+    margin-right: 80px;
+  }
 }
 
 .onsen_table .data {
