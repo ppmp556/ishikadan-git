@@ -1230,10 +1230,10 @@ underコンテンツ
 
         @include SP {
             width: 90%;
-            height: 450px;
+            height: 73vw;
             margin-top: -10%;
             margin-left: 10%;
-            padding-right: 20px;
+            padding: 10px;
 
             &.__mg {
                 margin-right: 10%;
@@ -1262,9 +1262,9 @@ underコンテンツ
         }
 
         @include SP {
-            @include rem(18);
+            @include rem(16);
             margin-left: 10%;
-            margin-top: 30%;
+            margin-top: 20%;
 
         }
     }
@@ -1289,13 +1289,13 @@ underコンテンツ
         }
 
         @include SP {
-            @include rem(15);
+            @include rem(12);
             margin-left: 10%;
-            margin-top: 15%;
+            margin-top: 5%;
             line-height: 1.8;
 
             &.__txt {
-                @include rem(11);
+                @include rem(9);
             }
 
         }

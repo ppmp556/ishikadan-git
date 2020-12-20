@@ -12,18 +12,9 @@ nav
     // margin-left: 120px;
 
     &_wrap {
-        @include tab {
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-
-        }
-        @include SP {
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-
-        }
+        position: absolute;
+        left: 50%;
+        transform: translateY(-50%);
     }
 
 
@@ -274,7 +265,18 @@ nav
             margin-right: 0;
             @include rem(26);
 
+            transition: transform .4s ease;
+
+            &::nth-child(2) {
+                transition-delay: .15s;
+            }
+            &::nth-child(3) {
+                transition-delay: .3s;
+            }
+
         }
+
+
 
     }
 

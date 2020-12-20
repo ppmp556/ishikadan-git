@@ -15,13 +15,13 @@ nav
         @include tab {
             position: absolute;
             left: 50%;
-            transform: translateX(-50%);
+            transform: translateY(-50%);
 
         }
         @include SP {
             position: absolute;
             left: 50%;
-            transform: translateX(-50%);
+            transform: translateY(-50%);
 
         }
     }

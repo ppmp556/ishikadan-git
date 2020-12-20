@@ -59,8 +59,8 @@ header
             padding-left: 35px;
 
             &::before {
-            //     width: 35px;
-            //     height: 35px;
+                width: 35px;
+                height: 35px;
                 left: -15px;
 
             }
@@ -136,10 +136,9 @@ header
             transform: translateY(-50%);
 
             @include tab {
-                margin-left: 25px;
-                // width: 35px;
-                // height: 35px;
-                // // left: -15px;
+                width: 35px;
+                height: 35px;
+                left: -15px;
 
             }
 
@@ -1060,12 +1059,12 @@ footer
         @include tab {
             margin-left: 25px;
 
-            // &::before {
-            //     width: 35px;
-            //     height: 35px;
-            //     // left: -15px;
+            &::before {
+                width: 40px;
+                height: 40px;
+                left: -15px;
 
-            // }
+            }
 
         }
     
@@ -1218,10 +1217,10 @@ underコンテンツ
         @include tab {
             width: 450px;
             width: 100%;
-            height: 450px;
+            // height: 85vw;
             margin-top: -50px;
             margin-left: 10%;
-            padding-right: 20px;
+            padding: 10px;
 
             &.__mg {
                 margin-right: 10%;
@@ -1230,10 +1229,10 @@ underコンテンツ
 
         @include SP {
             width: 90%;
-            height: 450px;
+            height: 73vw;
             margin-top: -10%;
             margin-left: 10%;
-            padding-right: 20px;
+            padding: 10px;
 
             &.__mg {
                 margin-right: 10%;
@@ -1262,9 +1261,9 @@ underコンテンツ
         }
 
         @include SP {
-            @include rem(18);
+            @include rem(16);
             margin-left: 10%;
-            margin-top: 30%;
+            margin-top: 20%;
 
         }
     }
@@ -1289,13 +1288,13 @@ underコンテンツ
         }
 
         @include SP {
-            @include rem(15);
+            @include rem(12);
             margin-left: 10%;
-            margin-top: 15%;
+            margin-top: 5%;
             line-height: 1.8;
 
             &.__txt {
-                @include rem(11);
+                @include rem(9);
             }
 
         }

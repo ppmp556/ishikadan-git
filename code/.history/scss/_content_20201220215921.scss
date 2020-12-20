@@ -1262,7 +1262,7 @@ underコンテンツ
         }
 
         @include SP {
-            @include rem(18);
+            @include rem(16);
             margin-left: 10%;
             margin-top: 30%;
 
@@ -1289,13 +1289,13 @@ underコンテンツ
         }
 
         @include SP {
-            @include rem(15);
+            @include rem(12);
             margin-left: 10%;
             margin-top: 15%;
             line-height: 1.8;
 
             &.__txt {
-                @include rem(11);
+                @include rem(9);
             }
 
         }
