@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>石井花壇|温海温泉旅館【公式サイト】</title>
+    <meta name="description" content="日本古来の素材と現代的表現を併せ持つ温泉旅館、石井花壇。
+    伝統的「和」の息づく空間で、至極のひとときをお過ごしください。" />
+    <!--PC：１２０文字以内 スマホ：70文字以内-->
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+    <!-- flatpickrを使うためのJavaScriptファイルとCSSファイルを読み込み -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ja.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+    <!-- ヘッダー -->
+        <header class="header color_head">
+            <h1 class="header_ttl color_head under_logo">
+
+                <a href="index.html" class="header_link">
+                石井花壇
+                </a>
+            </h1><!-- /.header_ttl -->
+
+            <!-- ハンバーガーメニュー部分 -->
+            <div class="nav_ham">
+                <div class="nav_btn" id="js-nav_toggle">
+                <span class="nav_line __tg1"></span>
+                <span class="nav_line __tg2"></span>
+                <span class="nav_line __tg3"></span>
+                </div>
+            </div><!-- ハンバーガーメニューここまで -->
+
+
+            <!-- ナビ -->
+            <nav class="nav" id="nav">
+                <ul class="nav_list color_head">
+                <li class="nav_item">
+                    <a href="oheya.html" class="nav_link">お部屋</a>
+                </li>
+                <!-- /.nav_item -->
+                <li class="nav_item">
+                    <a href="menu.html" class="nav_link">お料理</a>
+                </li>
+                <!-- /.nav_item -->
+                <li class="nav_item">
+                    <a href="onsen.html" class="nav_link">温泉</a>
+                </li>
+                <!-- /.nav_item -->
+                </ul>
+            </nav>
+            <!-- /.nav -->
+
+            <div class="header_btnbox flex_end" id="js-head_btn">
+                <div class="site_btn __headbtn">
+                    <a href="#" class="site_link">宿泊予約</a><!-- /. -->
+                </div><!-- /.site_btn -->
+            </div><!-- /.header_btnbox -->
+            <div class="dark_fill"></div><!-- /.dark_fill -->
+
+            <!-- モーダル -->
+            <div class="calendar">
+                <h2 class="calendar_ttl">宿泊予約</h2><!-- /.calendar_ttl -->
+                <div class="calendar_close" id="js-calendar_close">
+                <img src="./img/common/close.png" alt="" class="calendar_img">
+
+                </div><!-- /.calendar_ttlwrap -->
+
+                <div class="calendar_inner">
+                <form action="" method="post" class="calendar_form">
+                    <label for="name" class="form_ttl" >お名前</label>
+
+                    <input type="text" id="name" class="form_box" name="" placeholder="例 : 石井正悟" required="required">
+
+                    <label for="email" class="form_ttl">メールアドレス</label>
+                    <input type="email" id="email" class="form_box" name="" placeholder="例 : Example＠example.com" required="required">
+                    <p class="form_ttl">ご希望のプラン（空いているプランのみ表示されます）</p>
+
+                    <select name="" id="plan" class="calendar_select form_box">
+                        <optgroup value="">
+                        <option value="" hidden>プランを選択してください</option>
+                        <option value="1">➀【期間限定】海辺の四季旬彩、贅沢美味懐石プラン</option>
+                        <option value="2">➁ 平日に優雅に楽しむ、特別宿泊プラン</option>
+                        <option value="3">⓷ 絶景貸切露天と個室会席を満喫できるファミリープラン</option>
+                        </optgroup>
+                    </select>
+
+                    <p for="calendar" class="form_ttl">日時選択</p>
+
+                    <!-- <input class="flatpickr form_box" id="calendar" data-mindate=today type="text" readonly="readonly" placeholder="日時を選択してください" required="required"> -->
+                    <input class="flatpickr form_box" id="calendar" type="text" readonly="readonly" placeholder="日時を選択してください" required="required">
+
+                    <button type="submit" class="contact_link" value="送信" id="js-submit_btn">
+                        送　信
+                    </button><!-- /.site -->
+
+                </form>
+                </div><!-- /.calendar_inner -->
+
+
+            </div><!-- /.calendar -->
+
+
+        </header>
+
+        <div class="under_mv">
+            <div class="oheya_imgbox">
+                <p class="mv_copy">
+                    お部屋
+                </p><!-- /.mv_copy -->
+
+            </div><!-- /.oheya_imgbox -->
+
+        </div><!-- /.mv -->
+
+
+        <!-- メインコンテンツ -->
+        <main class="main_container">
+            <!-- パンくずリスト -->
+            <section class="under">
+                <div class="section_inner">
+                    <ul class="site_list" itemscope itemtype="https://schema.org/BreadcrumbList">
+                        <li class="site_list_item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                            <a href="index.html" itemprop="item" class="site_list_link">
+                                <span itemprop="name">トップ</span>
+                            </a>
+                            <meta itemprop="position" content="1">
+                        </li><!-- /.site_list_item -->
+                        <li class="site_list_item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                            <a href="oheya.html" itemprop="item" class="site_list_link">
+                                <span itemprop="name">お部屋</span>
+                            </a>
+                            <meta itemprop="position" content="2">
+                        </li><!-- /.site_list_item -->
+            
+                    </ul><!-- /.site_list -->
+
+                    <div class="intro_txtbox" data-aos="fade-up">
+                        <p class="intro_txt">
+                            創業より受け継がれてきた石井花壇の和の造り<br>
+                            温海の雄大な絶景を堪能していただけるように設計された客室<br>
+                            ゆるやかに流れ行く時間に身を委ねて
+                        </p><!-- /.intro_txt -->
+                    </div><!-- /.intro_txtbox -->
+
+                    <div class="under_content">
+                        <div class="under_imgbox" data-aos="fade-up">
+                            <img src="img/section-oheya/oheya01.jpg" alt="温泉付き客室" class="site_img">
+                        </div><!-- /.under_imgbox -->
+                        <div class="under_txtbox">
+                            <p class="under_ttl" data-aos="fade-up" data-aos-duration="1600">温泉付き客室</p><!-- /.under_ttl -->
+                            <p class="under_txt" data-aos="fade-up" data-aos-duration="1700">
+                                温海の源泉かけ流し露天風呂付き客室になります。<br>
+                                あなただけの上質な安らぎのひとときを。
+                            </p><!-- /.under_txt -->
+                            <p class="under_txt __txt" data-aos="fade-up" data-aos-duration="1700">
+                                ＊部屋数に限りがございます。<br>
+                                ＊洗い場はないため、お体を先に大浴場でお流しになって頂く必要があります。
+                            </p><!-- /.under_txt -->
+                        </div><!-- /.under_txtbox -->
+                    </div><!-- /.under_content -->
+
+                    <div class="under_content">
+                        <div class="under_imgbox" data-aos="fade-up">
+                            <img src="img/section-oheya/oheya02.jpg" alt="庭園付き客室" class="site_img">
+                        </div><!-- /.under_imgbox -->
+                        <div class="under_txtbox __mg">
+                            <p class="under_ttl __txtmg" data-aos="fade-up" data-aos-duration="1600">庭園付き客室</p><!-- /.under_ttl -->
+                            <p class="under_txt __txtmg" data-aos="fade-up" data-aos-duration="1700">
+                                庭園付きの客室になります。<br>
+                                お庭を見ながら、ほっとするひとときをお過ごしください。
+                            </p><!-- /.under_txt -->
+                            <p class="under_txt __txt __txtmg" data-aos="fade-up" data-aos-duration="1700">
+                                ＊お庭は複数のお客様と囲む形になります。<br>
+                                ＊部屋数に限りがございます。<br>
+                                ＊ご希望の方は「お抹茶/500円」をルームサービスさせていただきます。
+                            </p><!-- /.under_txt -->
+                        </div><!-- /.under_txtbox -->
+                    </div><!-- /.under_content -->
+
+                    <div class="under_content">
+                        <div class="under_imgbox" data-aos="fade-up">
+                            <img src="img/section-oheya/oheya03.jpg" alt="一般客室" class="site_img">
+                        </div><!-- /.under_imgbox -->
+                        <div class="under_txtbox">
+                            <p class="under_ttl" data-aos="fade-up" data-aos-duration="1600">一般客室</p><!-- /.under_ttl -->
+                            <p class="under_txt" data-aos="fade-up" data-aos-duration="1700">
+                                最もベーシックな客室になります。伝統の中にモダンさを取り入れた<br class="br_pc">
+                                内装となっており、とても過ごしやすくしていただけます。
+                            </p><!-- /.under_txt -->
+                            <p class="under_txt __txt" data-aos="fade-up" data-aos-duration="1700">
+                                ＊全室お部屋より日本海を望むことができます。
+                            </p><!-- /.under_txt -->
+                        </div><!-- /.under_txtbox -->
+                    </div><!-- /.under_content -->
+
+
+                </div>
+
+
+            </section><!-- /.under -->
+        <footer class="footer">
+            <div class="footer_inner">
+
+                <nav class="footer_nav">
+                    <ul class="footer_list">
+                    <li class="footer_item">
+                        <a href="oheya.html" class="footer_link">お部屋</a>
+                    </li>
+                    <!-- /.footer_item -->
+                    <li class="footer_item">
+                        <a href="menu.html" class="footer_link">お料理</a>
+                    </li>
+                    <!-- /.footer_item -->
+                    <li class="footer_item">
+                        <a href="onsen.html" class="footer_link">温泉</a>
+                    </li>
+                    <!-- /.footer_item -->
+                    </ul>
+                </nav>
+                <!-- /.footer_nav -->
+
+                <p class="footer_ttl">石井花壇</p><!-- /.footer_ttl -->
+
+                <div class="footer_access_box">
+                    <p class="footer_access_txt">
+                    〒000-0000　山形県鶴岡市XXXXXXXXXXXXXX<br>
+                    TEL.000-0000-0000　FAX00-0000-0000
+                    </p><!-- /.footer_access_txt -->
+                </div><!-- /.footer_access_box -->
+
+            </div><!-- /.footer_inner -->
+            <div class="footer_txtbox">
+                <small class="footer_txt">Copyright &copy; 石井花壇 All Rights Reserved.</small>
+            </div><!-- /.footer_txt -->
+
+        </footer><!-- /.footer-->
+
+        <!--//ここまでセクション-->
+
+
+    </main>
+
+
+    </div><!-- /.container -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script> flatpickr('#calendar', {});</script>
+    <script src="js/aos.js"></script>
+    <script src="js/main.js"></script>
+  
+</body>
+
+</html>

@@ -101,6 +101,44 @@ body.fix {
   height: 100%;
 }
 
+.br_pc {
+  display: block;
+}
+
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .br_pc {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .br_pc {
+    display: none;
+  }
+}
+
+.br_pctab {
+  display: none;
+}
+
+@media screen and (max-width: 1100px) and (min-width: 769px) {
+  .br_pctab {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .br_pctab {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .br_pctab {
+    display: none;
+  }
+}
+
 /****************************************:
 
 nav
@@ -178,9 +216,6 @@ nav
   .nav_list.clicked .nav_item {
     color: #000000;
     margin: 20px 0;
-  }
-  .nav_list.clicked .nav_item:hover {
-    border-bottom: 1px solid #000000;
   }
 }
 
@@ -385,6 +420,12 @@ nav
   transition: transform .7s;
   transition: transform .7s, -webkit-transform .7s;
   background: #ffffff;
+}
+
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .nav_link::after {
+    background: #000000;
+  }
 }
 
 .nav_link:hover::after {
@@ -888,6 +929,10 @@ header
   background-color: #000000;
 }
 
+.header.fix .nav_link::after {
+  background: #000000;
+}
+
 /****************************************:
 
 fv
@@ -959,9 +1004,9 @@ fv
 
 @media screen and (max-width: 480px) {
   .top_mv_copy {
-    font-size: 16px;
+    font-size: 24px;
     /*IE9以前に対応する*/
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -1037,6 +1082,12 @@ top_about
   margin-left: auto;
 }
 
+@media screen and (max-width: 1100px) and (min-width: 769px) {
+  .top_about_txtbox {
+    margin-right: 10%;
+  }
+}
+
 @media screen and (max-width: 769px) and (min-width: 480px) {
   .top_about_txtbox {
     font-size: 14px;
@@ -1068,6 +1119,12 @@ top_about
   font-size: 1.375rem;
 }
 
+@media screen and (max-width: 1100px) and (min-width: 769px) {
+  .top_about_txt {
+    margin-left: 10%;
+  }
+}
+
 @media screen and (max-width: 769px) and (min-width: 480px) {
   .top_about_txt {
     margin-left: 10%;
@@ -1091,7 +1148,7 @@ top_about
     line-height: 1.5;
   }
   .top_about_txt:last-child {
-    margin-top: 68%;
+    margin-top: 78%;
     font-size: 14px;
     /*IE9以前に対応する*/
     font-size: 0.875rem;
@@ -1132,12 +1189,6 @@ top_guide
       -ms-flex-align: start;
           align-items: flex-start;
   margin-top: 122px;
-  /*        @include tab-SP {
-            flex-wrap: wrap;
-            margin-top: 0;
-            margin-bottom: 50px;
-
-        } */
 }
 
 .top_guide_box:nth-child(2n) {
@@ -1173,6 +1224,12 @@ top_guide
   width: 55%;
   height: 35vw;
   margin-right: 10%;
+}
+
+@media screen and (max-width: 1100px) and (min-width: 769px) {
+  .top_guide_imgbox {
+    height: 40vw;
+  }
 }
 
 @media screen and (max-width: 769px) and (min-width: 480px) {
@@ -1252,6 +1309,14 @@ top_guide
   line-height: 1.72;
 }
 
+@media screen and (max-width: 1100px) and (min-width: 769px) {
+  .top_guide_ttl {
+    font-size: 24px;
+    /*IE9以前に対応する*/
+    font-size: 1.5rem;
+  }
+}
+
 @media screen and (max-width: 769px) and (min-width: 480px) {
   .top_guide_ttl {
     font-size: 25px;
@@ -1276,6 +1341,15 @@ top_guide
   line-height: 2;
 }
 
+@media screen and (max-width: 1100px) and (min-width: 769px) {
+  .top_guide_txt {
+    font-size: 14px;
+    /*IE9以前に対応する*/
+    font-size: 0.875rem;
+    margin-top: 10%;
+  }
+}
+
 @media screen and (max-width: 769px) and (min-width: 480px) {
   .top_guide_txt {
     font-size: 20px;
@@ -1296,6 +1370,17 @@ top_guide
 
 .top_guide .site_link {
   margin-top: 75px;
+}
+
+@media screen and (max-width: 1100px) and (min-width: 769px) {
+  .top_guide .site_link {
+    margin-top: 8%;
+    width: 150px;
+    padding: 12px 0;
+    font-size: 14px;
+    /*IE9以前に対応する*/
+    font-size: 0.875rem;
+  }
 }
 
 @media screen and (max-width: 769px) and (min-width: 480px) {
@@ -1400,6 +1485,12 @@ top-plan
   width: 340px;
 }
 
+@media screen and (max-width: 1100px) and (min-width: 769px) {
+  .top_plan_item {
+    padding: 0 10px;
+  }
+}
+
 @media screen and (max-width: 769px) and (min-width: 480px) {
   .top_plan_item {
     width: 100%;
@@ -1420,6 +1511,13 @@ top-plan
   width: 331px;
   height: 209px;
   overflow: hidden;
+}
+
+@media screen and (max-width: 1100px) and (min-width: 769px) {
+  .top_plan_imgbox {
+    width: 100%;
+    height: 150px;
+  }
 }
 
 @media screen and (max-width: 769px) and (min-width: 480px) {
@@ -1448,6 +1546,14 @@ top-plan
   line-height: 1.6;
 }
 
+@media screen and (max-width: 1100px) and (min-width: 769px) {
+  .top_plan_ttl {
+    font-size: 12px;
+    /*IE9以前に対応する*/
+    font-size: 0.75rem;
+  }
+}
+
 .top_plan_txt {
   font-size: 16px;
   /*IE9以前に対応する*/
@@ -1455,6 +1561,14 @@ top-plan
   line-height: 2;
   margin-top: 36px;
   letter-spacing: 0;
+}
+
+@media screen and (max-width: 1100px) and (min-width: 769px) {
+  .top_plan_txt {
+    font-size: 12px;
+    /*IE9以前に対応する*/
+    font-size: 0.75rem;
+  }
 }
 
 @media screen and (max-width: 769px) and (min-width: 480px) {
@@ -1475,6 +1589,12 @@ news
   max-width: 1180px;
   padding: 60px 0 80px;
   height: 757px;
+}
+
+@media screen and (max-width: 1100px) and (min-width: 769px) {
+  .top_news .section_inner {
+    height: 1070px;
+  }
 }
 
 @media screen and (max-width: 769px) and (min-width: 480px) {
@@ -1521,6 +1641,12 @@ news
   display: flex;
 }
 
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .top_news_content {
+    padding: 0 20px;
+  }
+}
+
 .top_news_list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1555,6 +1681,14 @@ news
   background-color: #f6f6f6;
   padding: 15px 10px;
   margin-bottom: 20px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.top_news_contentitem:hover {
+  opacity: .5;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
 @media screen and (max-width: 769px) and (min-width: 480px) {
@@ -1595,6 +1729,15 @@ news
           flex-wrap: wrap;
   width: 100%;
   overflow: hidden;
+}
+
+@media screen and (max-width: 1100px) and (min-width: 769px) {
+  .top_news_contentlist.active {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -1640,7 +1783,7 @@ news
 
 @media screen and (max-width: 480px) {
   .top_news_txtbox {
-    width: 250px;
+    width: 50vw;
   }
 }
 
@@ -1776,7 +1919,7 @@ access
 @media screen and (max-width: 769px) and (min-width: 480px) {
   .top_access_img {
     width: 90%;
-    height: 500px;
+    height: 60vw;
     background-size: contain;
     margin: 0 auto 50px;
   }
@@ -1792,6 +1935,12 @@ access
 
 .top_access_box {
   margin-left: 83px;
+}
+
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .top_access_box {
+    margin-left: 5%;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -1820,7 +1969,14 @@ access
   /*IE9以前に対応する*/
   font-size: 1rem;
   line-height: 2;
-  width: 180%;
+}
+
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .top_access_txt {
+    font-size: 13px;
+    /*IE9以前に対応する*/
+    font-size: 0.8125rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -1939,6 +2095,10 @@ footer
 下層ヘッダー
 
 *****************************************:*/
+.header .under {
+  position: fixed;
+}
+
 .header.color_head {
   background: #ffffff;
 }
@@ -2099,6 +2259,13 @@ underコンテンツ
   margin-top: -57px;
 }
 
+@media screen and (max-width: 1100px) and (min-width: 769px) {
+  .under_imgbox {
+    width: 70%;
+    height: 250px;
+  }
+}
+
 @media screen and (max-width: 769px) and (min-width: 480px) {
   .under_imgbox {
     width: 80%;
@@ -2119,6 +2286,7 @@ underコンテンツ
   height: 381px;
   z-index: -1;
   margin-left: -158px;
+  padding-right: 5%;
 }
 
 .under_txtbox.__mg {
@@ -2128,6 +2296,12 @@ underコンテンツ
 
 .under_txtbox .__txtmg {
   margin-left: 60px;
+}
+
+@media screen and (max-width: 1100px) and (min-width: 769px) {
+  .under_txtbox.__mg {
+    padding-right: 25%;
+  }
 }
 
 @media screen and (max-width: 769px) and (min-width: 480px) {
@@ -2168,12 +2342,19 @@ underコンテンツ
   font-size: 1.5rem;
 }
 
+@media screen and (max-width: 1100px) and (min-width: 769px) {
+  .under_ttl {
+    margin-top: 10%;
+    margin-left: 41%;
+  }
+}
+
 @media screen and (max-width: 769px) and (min-width: 480px) {
   .under_ttl {
     font-size: 22px;
     /*IE9以前に対応する*/
     font-size: 1.375rem;
-    margin-left: 15%;
+    margin-left: 5%;
     margin-top: 95px;
   }
 }
@@ -2191,6 +2372,7 @@ underコンテンツ
 .under_txt {
   margin-top: 52px;
   margin-left: 238px;
+  line-height: 2;
   font-size: 16px;
   /*IE9以前に対応する*/
   font-size: 1rem;
@@ -2202,14 +2384,32 @@ underコンテンツ
   font-size: 0.875rem;
 }
 
+@media screen and (max-width: 1100px) and (min-width: 769px) {
+  .under_txt {
+    margin-top: 5%;
+    margin-left: 41%;
+    font-size: 13px;
+    /*IE9以前に対応する*/
+    font-size: 0.8125rem;
+    /*     &.__txt {
+                padding-right: 25%
+            } */
+  }
+}
+
 @media screen and (max-width: 769px) and (min-width: 480px) {
   .under_txt {
-    font-size: 16px;
+    font-size: 18px;
     /*IE9以前に対応する*/
-    font-size: 1rem;
-    margin-left: 15%;
-    margin-top: 40px;
-    line-height: 1.8;
+    font-size: 1.125rem;
+    margin-left: 5%;
+    margin-top: 5%;
+    line-height: 2.4;
+  }
+  .under_txt._txt {
+    font-size: 10px;
+    /*IE9以前に対応する*/
+    font-size: 0.625rem;
   }
 }
 
