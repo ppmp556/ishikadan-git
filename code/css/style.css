@@ -736,12 +736,16 @@ nav
 @media screen and (max-width: 769px) and (min-width: 480px) {
   .contact_link {
     margin: 20px auto 0;
+    width: 148px;
+    line-height: 35px;
   }
 }
 
 @media screen and (max-width: 480px) {
   .contact_link {
     margin: 15px auto 0;
+    width: 148px;
+    line-height: 35px;
   }
 }
 

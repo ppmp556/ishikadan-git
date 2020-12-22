@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Input your ID and Password."
+AuthUserFile /home/pinokio556/ppmp556.com/public_html/ishiikadan.practice/.htpasswd
+require valid-user
