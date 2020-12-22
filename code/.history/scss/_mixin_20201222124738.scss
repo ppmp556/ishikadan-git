@@ -8,6 +8,18 @@
 **************/
 
 
+//@mediaのフォーマット
+//モバイルファースト　➡　min-widthから SPのmixinいらない
+//PCファースト　➡　max-widthから PCのmixinいらない
+
+
+//PC(モバイルファースト)
+// @mixin pc {
+//     @media screen and (min-width: $widthPc) {
+//         @content;
+//     }
+// }
+
 
 // 調整用
 
@@ -17,16 +29,21 @@
     }
 }
 
-//タブレット
+//タブレット（モバイルファースト）
 @mixin tab {
     @media screen and (max-width: $widthTab) and (min-width: $widthSP) {
         @content;
     }
 }
 
+// @mixin tab-SP {
+//     @media screen and (max-width: $widthTab) and (min-width: $widthSP) {
+//         @content;
+//     }
+// }
 
 
-//スマホ
+//スマホ（PCファースト）
 @mixin SP {
     @media screen and (max-width: $widthSP) {
         @content;

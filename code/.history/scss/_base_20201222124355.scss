@@ -1,16 +1,24 @@
 // ベーススタイル用
 
 
+// html {
+//     // ルートのフォントサイズ 10pxに設定
+//     font-size: 62.5%;
+// }
+
 body {
 
     @include rem(10);
 
-
+    // デフォルトのフォントサイズ 16pxと同等のサイズに設定
+    // font-size: 1.6em;
+    // font-size: 16px;
     margin: 0 auto;
+    // letter-spacing: .5em;
     font-family: $fontMain;
     color: $cBlack;
 
-
+    // width: 375px;
 
     &.fix {
         overflow: hidden;
@@ -22,18 +30,16 @@ body {
     box-sizing: border-box;
 }
 
-
 *:focus {
     outline: none;
 }
 
-// スマホでタッチしたとき、青い表示がでないようにする
 a {
     -webkit-tap-highlight-color:rgba(0,0,0,0);
     cursor:pointer;
 }
 
-// bodyタグにoverallつけたら
+
 .overall {
     font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3",
                 "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
@@ -44,9 +50,41 @@ a {
 .container {
     width: 100%;
     margin: 0 auto;
+    // color: $cWhite;
     position: relative;
     overflow: hidden;
 }
+
+/*************
+
+モック画像
+終わったら削除
+
+**************/
+
+
+.mock {
+    /* モック画像 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 375px;
+    opacity: 0.3;
+
+    /* 反転 */
+    filter: hue-rotate(180deg);
+
+    /* テキストを掴まないように */
+    pointer-events: none;
+
+    z-index: 999;
+}
+
+
+
+
 
 
 
