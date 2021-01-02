@@ -191,6 +191,13 @@ nav
             flex-direction: column;
     height: 100vh;
     background-color: #ffffff;
+    -webkit-transition: .6s;
+    transition: .6s;
+    left: -100%;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: .7s;
+    transition: .7s;
   }
   .nav_list.clicked {
     left: 50%;
@@ -225,6 +232,11 @@ nav
             flex-direction: column;
     height: 100vh;
     background-color: #ffffff;
+    left: -100%;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: .7s;
+    transition: .7s;
   }
   .nav_list.clicked {
     left: 50%;
@@ -276,12 +288,18 @@ nav
   }
   .nav_line:nth-child(1) {
     top: 0px;
+    -webkit-transition: .5s;
+    transition: .5s;
   }
   .nav_line:nth-child(2) {
     top: 8px;
+    -webkit-transition: .5s;
+    transition: .5s;
   }
   .nav_line:nth-child(3) {
     top: 16px;
+    -webkit-transition: .5s;
+    transition: .5s;
   }
   .nav_line.clicked:nth-child(1) {
     -webkit-transform: translateY(12px) rotate(-315deg);
@@ -324,6 +342,8 @@ nav
     position: absolute;
     top: -20px;
     left: -25px;
+    -webkit-transition: .5s;
+    transition: .5s;
   }
   .nav_line {
     position: absolute;
@@ -333,12 +353,18 @@ nav
   }
   .nav_line:nth-child(1) {
     top: 0px;
+    -webkit-transition: .5s;
+    transition: .5s;
   }
   .nav_line:nth-child(2) {
     top: 8px;
+    -webkit-transition: .5s;
+    transition: .5s;
   }
   .nav_line:nth-child(3) {
     top: 16px;
+    -webkit-transition: .5s;
+    transition: .5s;
   }
   .nav_line.clicked:nth-child(1) {
     -webkit-transform: translateY(12px) rotate(-315deg);

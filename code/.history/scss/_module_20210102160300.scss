@@ -45,11 +45,6 @@ nav
 
             height: 100vh;
             background-color: $cWhite;
-            transition: .6s;
-
-            left: -100%;
-            transform: translateX(100%);
-            transition: .7s;
 
 
             &.clicked {
@@ -79,11 +74,6 @@ nav
 
             height: 100vh;
             background-color: $cWhite;
-
-            left: -100%;
-            transform: translateX(100%);
-            transition: .7s;
-
 
 
             &.clicked {
@@ -156,18 +146,15 @@ nav
 
             &:nth-child(1) {
                 top: 0px;
-                transition: .5s;
 
             }
 
             &:nth-child(2) {
                 top: 8px;
-                transition: .5s;
             }
 
             &:nth-child(3) {
                 top: 16px;
-                transition: .5s;
             }
 
             &.clicked:nth-child(1) {

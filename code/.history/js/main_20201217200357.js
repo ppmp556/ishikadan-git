@@ -15,8 +15,8 @@ $(() => {
 
     // ハンバーガーメニュー
     $('#js-nav_toggle').click(() => {
-        $('.nav_ham').toggleClass('clicked');
         $('.nav_line').toggleClass('clicked');
+        $('.nav_ham').toggleClass('clicked');
         $('.nav_list').toggleClass('clicked');
     });
 

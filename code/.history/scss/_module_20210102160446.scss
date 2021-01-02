@@ -47,10 +47,6 @@ nav
             background-color: $cWhite;
             transition: .6s;
 
-            left: -100%;
-            transform: translateX(100%);
-            transition: .7s;
-
 
             &.clicked {
                 left: 50%;
@@ -79,11 +75,6 @@ nav
 
             height: 100vh;
             background-color: $cWhite;
-
-            left: -100%;
-            transform: translateX(100%);
-            transition: .7s;
-
 
 
             &.clicked {
